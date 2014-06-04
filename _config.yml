@@ -1,0 +1,10 @@
+name: "Gereksiz"
+markdown: redcarpet
+highlighter: pygments
+permalink: :title
+exclude: [README.md, LICENSE, Makefile]
+
+# Information for the Atom feed
+gereksiz:
+   author: "John Doe"
+   email: "john.doe@mail.sexy"
