@@ -1,5 +1,6 @@
 ---
-published: false
+title: This Site's Setup
+published: true
 ---
 
 ## Hosting this site
