@@ -1,0 +1,20 @@
+Setting up the UAARG site
+=========================
+Using the [Jekyll Incorporated](http://incorporated.sendtoinc.com/) theme.
+
+Installing dependencies
+-----------------------
+Assuming you already have Ruby 1.9.3:
+> bundle install
+You'll also need a javascript runtime:
+> sudo gem install therubyracer
+
+Getting started
+---------------
+Edit _config.yml to enable/disable sharing buttons.
+
+Generating the site
+-------------------
+> jekyll serve
+
+
