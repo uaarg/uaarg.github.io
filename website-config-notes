@@ -21,5 +21,14 @@ Generating the site
 
 Publishing the site
 -------------------
+Github pages doesn't support jekyll plugins, which this site uses. This means that instead of the jekyll source, we have to publish the generated site contents to github pages.
+Here's a guide on how to get it set up: http://ixti.net/software/2013/01/28/using-jekyll-plugins-on-github-pages.html
+Basically, you have to set up 2 branches on github:
+> git checkout -b source master
+> git push -u origin source
+Then in the repository settings on github set the *source* branch as default.
+Github will publish the site from master and you can version control the site from source.
+
+Once you've got it set up:
 > rake publish
-This is defined in the Rakefile.
+publishes the site.

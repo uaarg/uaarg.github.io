@@ -4,9 +4,8 @@ title: Sponsors
 ---
 
 ## Current Sponsors ##
-Shell Canada
-
-University of Alberta Faculty of Engineering
+* Shell Canada
+* University of Alberta Faculty of Engineering
 
 ## Sponsor us ##
 
