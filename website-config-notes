@@ -4,10 +4,12 @@ Using the [Jekyll Incorporated](http://incorporated.sendtoinc.com/) theme.
 
 Installing dependencies
 -----------------------
-Assuming you already have Ruby 1.9.3:
+Assuming you already have Ruby 1.9.3. If not, install it for your system!
+
+You'll also need a javascript runtime. Add this to the Gemfile in this directory:
+> gem 'therubyracer'
+Then:
 > bundle install
-You'll also need a javascript runtime:
-> sudo gem install therubyracer
 
 Getting started
 ---------------
@@ -17,4 +19,7 @@ Generating the site
 -------------------
 > jekyll serve
 
-
+Publishing the site
+-------------------
+> rake publish
+This is defined in the Rakefile.
