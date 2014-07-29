@@ -8,9 +8,9 @@ inc:
   # Company information
   company:      University of Alberta Aerial Robotics Group
   url:          ece.ualberta.ca/~uaarg
-  facebook:     uaarg
-  twitter:      uaarg
-  #gplus:        '101183822199340201470'
+  # facebook:     uaarg
+  # twitter:      uaarg
+  # gplus:        '101183822199340201470'
   about_link:   /about
   
   # Product Information
@@ -20,7 +20,7 @@ inc:
   # Comments
   disqus:
     # Eg. "exampleblog" Set to false to disable comments
-    shortname:  false
+    shortname: "cxiao-gh"
   
   # Sharing settings
   sharing:
@@ -41,7 +41,7 @@ inc:
   
   # Setup your fonts, colors etc at _assets/stylesheets/main.scss
 
-url:         http://incorporated.sendtoinc.com
+url:         http://cxiao.net
 source:      .
 destination: ./_site
 plugins:     ./_plugins
@@ -59,7 +59,7 @@ pygments:    true
 relative_permalinks: true
 
 permalink:     pretty
-paginate_path: 'page:num'
+paginate_path: 'blog/page:num'
 paginate: 10
 
 markdown:      maruku
