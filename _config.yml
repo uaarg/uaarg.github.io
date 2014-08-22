@@ -20,7 +20,7 @@ inc:
   # Comments
   disqus:
     # Eg. "exampleblog" Set to false to disable comments
-    shortname: "cxiao-gh"
+    shortname: "uaarg"
   
   # Sharing settings
   sharing:
