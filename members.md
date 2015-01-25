@@ -6,10 +6,10 @@ title: Members
 [Interested in becoming a member?](/joinus)
 
 # Executive #
-+ *President* - Cindy Xiao
-+ *VP Internal* - Andrew Jowsey
-+ *VP External* - Nicholas Kwan-Wong
-+ *VP Systems Integration* - Rijesh Augustine
++ *President* - Rijesh Augustine
++ *VP Internal* - Morgan Redmond
++ *VP External* - Brian Hinrichsen
++ *VP Systems Integration* - William Wood
 + *Treasurer* - Sheldon Marquis
 
 # Advisors #
