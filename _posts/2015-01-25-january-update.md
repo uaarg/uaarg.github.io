@@ -15,7 +15,7 @@ Hey world out there. We have been a bit slacking in updating our blog, hopefully
 
 New Plane - If you recall shortly before US competition our plane had a fateful water landing. During the summer plans were set for our new plane. We have decided to continue using the EPP foam airframe that last year's capstone group had developed. In the first two weeks of school Andrew, Cindy and Rijesh were busy busy putting the plane together. Andrew made all the modifications and assemebled the airframe, Cindy did her usual imaging magic, and Rijesh brought the electronics and autopilot all together. Our first flight was a success! (see below)
 
-Fully Autonomous Flight - On our aircrafts maiden flight, we managed to get the plane to a fully autonomous state. It successfully cycled through three different waypoints on either side of the flying field, hanging altitude by up to 200m.
+Fully Autonomous Flight - On our aircrafts maiden flight, we managed to get the plane to a fully autonomous state. The plane successfully navigated through three different waypoints on either side of the flying field, changing altitude by to 200m.
 
 Kick-off Meeting - We held our annual kick off meeting. We had many people attend and the club room was quite packed last semester. We are hoping that will be the same for this semester as well.
 
