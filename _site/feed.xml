@@ -6,9 +6,36 @@
     <atom:link href="http://uaarg.com/feed.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-us</language>
-    <pubDate>Mon, 26 Jan 2015 20:15:20 +0000</pubDate>
-    <lastBuildDate>Mon, 26 Jan 2015 20:15:20 +0000</lastBuildDate>
+    <pubDate>Mon, 09 Mar 2015 22:07:05 +0000</pubDate>
+    <lastBuildDate>Mon, 09 Mar 2015 22:07:05 +0000</lastBuildDate>
 
+    
+    
+    <item>
+      <title>Developing Redundancy</title>
+      <link>http://uaarg.com/2015/03/09/developing-redundancies/</link>
+      <pubDate>Mon, 09 Mar 2015 00:00:00 +0000</pubDate>
+      <author></author>
+      <guid>http://uaarg.com/2015/03/09/developing-redundancies</guid>
+      <description>&lt;p&gt;Hi followers. Here’s another quick update.&lt;/p&gt;
+
+&lt;h1 id=&quot;launcher&quot;&gt;Launcher&lt;/h1&gt;
+
+&lt;p&gt;Right now we are currently in the midst a developing a fully autonomous launching system. Ideally the pilot intervention should only be required during the landing stage.&lt;/p&gt;
+
+&lt;h1 id=&quot;last_semester&quot;&gt;Last Semester&lt;/h1&gt;
+
+&lt;p&gt;Last Semester we had some major success on the autopilot front. We were able to achieve fully autonomous flight. The following are screenshots from google earth showing the path of the plane.&lt;/p&gt;
+&lt;div class='full zoomable'&gt;&lt;img src='/images/auto2.png' /&gt;&lt;/div&gt;&lt;p /&gt;&lt;div class='full zoomable'&gt;&lt;img src='/images/auto3.png' /&gt;&lt;/div&gt;
+&lt;p&gt;Further tuning needs to be performed as well as incorporation of airspeed data. Stay Tuned.&lt;/p&gt;
+
+&lt;h1 id=&quot;redundancies&quot;&gt;Redundancies&lt;/h1&gt;
+
+&lt;p&gt;We currently have one working plane. We are hoping to have three up and running planes. That involves modifying two more airframes, assembling two more electronics boards, loading up and configuring imaging computers, and pairing autopilot control boards with various modules.&lt;/p&gt;
+
+&lt;p&gt;There is a lot of work ahead of us. The goal is to get a second plane ready by the end of March.&lt;/p&gt;</description>
+    </item>
+    
     
     
     <item>
