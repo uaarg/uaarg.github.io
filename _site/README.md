@@ -1,17 +1,24 @@
-# Jekyll Incorporated
-Modern Jekyll based blog. Great for companies, products or anything. See live at [blog.sendtoinc.com](http://blog.sendtoinc.com)
+# UAARG website on Github Pages
+This website is using the [Jekyll Incorporated](http://incorporated.sendtoinc.com/) theme.
 
-## Installation & Usage
-    bundle install
-    jekyll serve --watch
+## Installation
+Clone this repository to your local machine.
 
-_Note: Requires Ruby version 1.9.3 =>. For example use [rbenv](https://github.com/sstephenson/rbenv)_   
+Assuming you already have Ruby 1.9.3. If not, install it for your system!
+
+You'll also need a javascript runtime. Add this to the Gemfile in this directory:
+`gem 'therubyracer'`
+Then install the required dependencies:
+`bundle install`
+
+To serve a local version that you can use for testing:
+`jekyll serve --watch`
     
 ## Configuration
 Edit: _config.yml (general options), main.css (theme colors &amp; fonts)
 
 ```
-jekyll-incorporated/
+uaarg.github.io/
 ├── _config.yml
 ├── _assets/
     ├── stylesheets/
@@ -22,22 +29,14 @@ _Note: when editing _config.yml, you need to restart jekyll to see the changes._
 
     
 ## Publish to Github Pages
-1. Add your domain to _CNAME_
-2. Edit your repo address at _Rakefile_
-    
-Run rake task. **NOTE: It will deploy the generated site to _gh-pages_ branch overwriting it**    
+There are two branches here: `source` and `master`. Make your site configuration changes, write posts, etc. in the `source` branch; the `master` branch is for the published result!
+
+Once you've made your changes in the `source` branch, publish to `master` with the `rake` task (this will overwrite the master branch!):
 ``` 
-rake site:publish
+rake publish
 ```
 
-## Usage examples
-
-* Adroll Engineering http://tech.adroll.com/
-* Brace.io blog http://blog.brace.io/
-* Spark.io blog http://blog.spark.io/
-* Department of Better Technology http://blog.dobt.co/
-
-## Authors
+## Theme Authors
 
 Originally build for [sendtoinc.com](https://sendtoinc.com), your workspace for sharing and organizing knowledge
 
@@ -50,12 +49,6 @@ Originally build for [sendtoinc.com](https://sendtoinc.com), your workspace for 
 
 + [http://twitter.com/jorilallo](http://twitter.com/jorilallo)
 + [http://github.com/jorde](http://github.com/jorilallo)
-
-## Todo:
-
-+ Documentation
-+ Less config files
-+ Better deploy scripts
 
 ## Copyright and license
 

@@ -4,10 +4,12 @@ Using the [Jekyll Incorporated](http://incorporated.sendtoinc.com/) theme.
 
 Installing dependencies
 -----------------------
-Assuming you already have Ruby 1.9.3:
+Assuming you already have Ruby 1.9.3. If not, install it for your system!
+
+You'll also need a javascript runtime. Add this to the Gemfile in this directory:
+> gem 'therubyracer'
+Then:
 > bundle install
-You'll also need a javascript runtime:
-> sudo gem install therubyracer
 
 Getting started
 ---------------
@@ -17,4 +19,16 @@ Generating the site
 -------------------
 > jekyll serve
 
+Publishing the site
+-------------------
+Github pages doesn't support jekyll plugins, which this site uses. This means that instead of the jekyll source, we have to publish the generated site contents to github pages.
+Here's a guide on how to get it set up: http://ixti.net/software/2013/01/28/using-jekyll-plugins-on-github-pages.html
+Basically, you have to set up 2 branches on github:
+> git checkout -b source master
+> git push -u origin source
+Then in the repository settings on github set the *source* branch as default.
+Github will publish the site from master and you can version control the site from source.
 
+Once you've got it set up:
+> rake publish
+publishes the site.
