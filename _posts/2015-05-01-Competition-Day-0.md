@@ -2,7 +2,7 @@
 layout: post
 title: Competition Day 0
 
-cover_image: planeonatable.png
+cover_image: planeonatable.jpg
 
 excerpt: "Fun Travels"
 
