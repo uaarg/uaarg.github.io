@@ -29,8 +29,7 @@ Finally with 17 minutes of flight time to spare we made it out to the field. And
 <div class="full zoomable"><img src="/images/dirtbiker.jpg"></div>
 <p/>
 
-Andrew launched the plane, but something flew off as it left Andrew's hand Worried it was part of the prop or another vital component of the plane Rijesh immediately cut throttle. The plane came down hard and the tail boom snapped again in the same plane. Note to self: Find alternative means to reinforce the tail boom.
-What had flown off were logo stickers that were poorly applied to the plane.
+Andrew launched the plane, but something flew off as it left Andrew's hand. Worried it was part of the prop or another vital component, Rijesh immediately cut throttle. The plane came down hard and the tail boom snapped again; in the same place as yesterday. Harmless logo stickers that were poorly applied to the plane had flown off.
 <div class="full zoomable"><img src="/images/stickers.jpg"></div>
 <p/>
 
