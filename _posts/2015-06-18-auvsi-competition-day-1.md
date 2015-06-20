@@ -1,6 +1,6 @@
 --
 layout: post
-title: AUVSI SUAS Competition Day 1: Another Long Day
+title: AUVSI SUAS Competition Day 1 Another Long Day
 
 cover_image: cover.JPG
 

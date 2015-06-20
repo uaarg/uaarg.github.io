@@ -1,6 +1,6 @@
 --
 layout: post
-title: AUVSI SUAS Competition Day 0: The Arrival
+title: AUVSI SUAS Competition Day 0 The Arrival
 
 excerpt: "This is the first of our blog posts on the 2015 AUVSI Student UAS competition. Today was quite the day. We all got up early in the morning to catch our flights. We all decided to arrive 2 hours before our flight to the US and we just barely made the flight."
 
