@@ -1,4 +1,4 @@
---
+---
 layout: post
 title: AUVSI SUAS Competition Day 0 The Arrival
 
