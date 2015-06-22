@@ -15,15 +15,15 @@ Hi All,
 
 Competition Day 3 has arrived and past. Yesterday we found out that we were team number 31 of 32 for flying. That meant that our flight time would be early in the morning. Big shout out to our base access liason, Brendan. He allowed us to store some equipment in his truck the day before, allowing us to keep our plane ready for launch.
 
-<div class="full zoomable"><img src="/images/ua_mothra_pre_flight.jpg"></div>
+<div class="full zoomable"><img src="/images/compplane.jpg"></div>
 
 We reached the flight time and prepped our plane for launch. Our mission time started at 8:53am. Each member of the team had a specific role. Rijesh was the flight commander, Cindy was the imaging technician, Sebastian was the autopilot technician and Brian was the telemetry technician. Rijesh is also usually our safety pilot, but this competition does provide pilots. The safety pilot was fully debriefed beforehand on the workings of the UAV, autopilot controls, and failsafes. 
 
-<div class="full zoomable"><img src="/images/table.jpg"></div>
+<div class="full zoomable"><img src="/images/working.jpg"></div>
 
 #Mission Time#
 
-From the start of mission time we brought the plane into launch configuration in a little less than 3 minutes. This involved powering up the plane, establishing a telemetry link, establishing a Wi-Fi link, performing camera exposure and focus lock, installing the camera and engaging our image capture software. During this time Cindy and Sebastian set up the sfotware portions of imaging and autopilot respectively. Rijesh was busy turning on the plane and configuring the camera. 
+From the start of mission time we brought the plane into launch configuration in a little less than 3 minutes. This involved powering up the plane, establishing a telemetry link, establishing a Wi-Fi link, performing camera exposure and focus lock, installing the camera and engaging our image capture software. During this time Cindy and Sebastian set up the software portions of imaging and autopilot respectively. Rijesh was busy turning on the plane and configuring the camera. 
 
 At this point the plane was ready for launch. Rijesh hand launched the plane and the safety pilot put the plane at 130m above the ground. Autonomous flight was engaged at this point. The plane did a 1/2 circle of a standby waypoint and proceeded to perform the autonomous waypoint navigation. This portion of the mission involves the plane flying to different waypoints autonomously. there are 6 different waypoints at varying altitudes. The autopilot performed this task admirably. Yea Autopilot lead.
 
@@ -43,12 +43,11 @@ The plane was then landed in autonomous mode and the 900 MHz link was turned off
 #Post Processing#
 
 
-
-Right before takeoff we lost our Wi-Fi comunication link with the plane. This link is designed to transfer images to our ground imaging station for immeadiate processing. As a result all of our image processing had to be done after the plane had landed.
+Right before takeoff we lost our Wi-Fi communication link with the plane. This link is designed to transfer images to our ground imaging station for immeadiate processing. As a result all of our image processing had to be done after the plane had landed.
 
 <div class="full zoomable"><img src="/images/commandtent.jpg"></div>
 
-Images were then transferred onto ground station computers. Our ground imaging station software is not fully functional so a manual export had to be preformed. Rijesh and Cindy went through the photos reading out load the image number, and target description whenever they found a target. The next step was to manual insert the GPS data for each target. In total we found all 8 targets. 
+Images were then transferred onto ground station computers. Our ground imaging station software is not fully functional so a manual export had to be preformed. Rijesh and Cindy went through the photos reading out load the image number, and target description whenever they found a target. The next step was to manual insert the GPS data for each target. We found all 8 targets. Yay imaging lead!! 
 
 
 <div class="full zoomable"><img src="/images/target.jpg"></div>
@@ -60,13 +59,13 @@ Images were then transferred onto ground station computers. Our ground imaging s
 
 #Results#
 
-The competition is scored based on three different areas. A Journal Paper, a Flight Readiness Review and the Flight-Mission Demo. In total 55 schools registered and had plans to display their unmanned aerial systems (UAS's). Of those 55 teams only 39 completed the Journal Papers. Of those 39 only 32 participated in the Flight-Mission Demo. UAARG placed 18.
+The competition is scored based on three different areas. A Journal Paper, a Flight Readiness Review and the Flight-Mission Demo. In total 55 teams had registered and had plans to display their unmanned aerial systems (UAS). Teams from around the world, including Turkey, Israel, India and Romania, participated. Of those 55 teams only 39 completed the Journal Papers. Of those 39 only 32 participated in the Flight-Mission Demo. UAARG placed 18th.
 
 The Journal Paper is a technical paper detailing the design and testing of our UAS. Andrew, Rijesh and Cindy were the primary authors of this paper. In the feedback they let us know that they really liked the parts Andrew had written. They recommended more information on testing. We placed 23 of 39. 
 
 The Flight Readiness Review is a briefing that is used to show the judges that a team is ready and prepared to fly. Again they recommended that we provide more information on testing. We placed 28 of 34.
 
-So how did we get 18? Well our Flight-Mission Demo went really well. This area is where teams actually give a demonstration of there system. Autopilot-wise the system performed admirably. The plane passed over each waypoint and was within 7m of the target waypoint alitude. Shout out to Sebastian for setting up our stellar flight plan. Our Imaging system ran throughout the flight and we were able to capture images of the entire search area. We placed 11 out of 32 teams in actual flight performance.
+So how did we get 18? Well our Flight-Mission Demo went really well. This area is where teams actually give a demonstration of there system. Autopilot-wise the system performed admirably. The plane passed over each waypoint and was within 7m of the target waypoint alitude. Shout out to Sebastian for setting up our stellar flight plan. Our Imaging system ran throughout the flight and we were able to capture images of the entire search area. We placed 11th out of 32 teams in actual flight performance.
 
 #Future#
 
@@ -76,12 +75,10 @@ For Imaging we want to implement an external magnetometer away from current carr
 
 <div class="full zoomable"><img src="/images/emerge.jpg"></div>
 
+Boo Imaging lead.
+
 For Communications we need to improve on establishing and maintaing Wi-Fi data links. 
 
+#Conclusion#
 
-Conclusion
-
-Overall our performance was very well, especially if you consider the man power and number of individuals who participated in autopilot and imaging. We'd like to thank everyone for making this such a success. This includes our faculty advisors Duncan Elliott and Michael Lipsett for all the time they spend with us. Peter Cary our safety pilot and airframe advisor. Camron Lee for all his help in imaging and how to Engineer. We would also like to thank the Unviersity of Alberta and Shell for all of there support they have provided. 
-
-<div class="full zoomable"><img src="/images/ontheroad.JPG"></div>
-<div class="full zoomable"><img src="/images/ontheroad.JPG"></div>
+Overall our performance was very well, especially if you consider the manpower and number of individuals who participated in autopilot and imaging. We'd like to thank everyone for making this such a success. This includes our faculty advisors Duncan Elliott and Michael Lipsett for all the time they spend with us. Peter Cary our safety pilot and airframe advisor. Cameron Lee for all his help in imaging, advising us on best practices, and staying with the club even after graduation. We would also like to thank the University of Alberta and Shell Canada for all of the support they have provided. 
