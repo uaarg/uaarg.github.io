@@ -33,13 +33,14 @@ task :publish => [:generate] do
 end
 
 desc "Setup _site to be a git repository"
-task :setup => [:generate] do
+task :setup
   pwd = Dir.pwd
   Dir.chdir "_site"
     system "git init ."
     system "git remote add origin https://github.com/uaarg/uaarg.github.io.git"
+    system "git pull origin master"
     Dir.chdir pwd
-end
+
 
 desc "Push current contents of _site"
 task :push
