@@ -31,10 +31,26 @@ _Note: when editing _config.yml, you need to restart jekyll to see the changes._
 ## Publish to Github Pages
 There are two branches here: `source` and `master`. Make your site configuration changes, write posts, etc. in the `source` branch; the `master` branch is for the published result!
 
-Once you've made your changes in the `source` branch, publish to `master` with the `rake` task (this will overwrite the master branch!):
+Once you've made your changes in the `source` branch, you can generate the website with the `rake` task this will modify files in the `_site` directory:
 ``` 
+rake generate
+```
+
+To publish the files into the master branch we will first need to make `_site` a git repository pointing to the `master` branch. This can be accomplished with the `rake` task. (This will only need to be done the first time the repository is cloned) 
+```
+rake setup
+```
+
+To push the files onto the master branch you can use the `rake` task.
+```
+rake push
+```
+
+To generate and publish the site you can use the the `rake` task as well. This essentially performs `rake generate` followed by `rake push`.
+```
 rake publish
 ```
+
 
 ## Theme Authors
 
