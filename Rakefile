@@ -34,12 +34,7 @@ end
 
 desc "Setup _site to be a git repository"
 task :setup do
-  pwd = Dir.pwd
-  Dir.chdir "_site"
-    system "git init ."
-    system "git remote add origin https://github.com/uaarg/uaarg.github.io.git"
-    system "git pull origin master"
-    Dir.chdir pwd
+  system "git clone https://github.com/uaarg/uaarg.github.io.git _site --branch master"
 end
 
 desc "Push current contents of _site"
