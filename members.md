@@ -6,11 +6,11 @@ title: Members
 [Interested in becoming a member?](/joinus)
 
 # Executive #
-+ *Co-Presidents* - Rijesh Augustine & Andrew Jowsey
++ *Co-Presidents* - Rijesh Augustine & Sebastian Werner
 + *VP Internal* - Brian Hinrichsen
-+ *VP External* - Cindy Xiao
-+ *VP Systems Integration* - Sebastian Werner
-+ *Treasurer* - Sheldon Marquis
++ *VP External* - Andrew Jowsey
++ *VP Systems Integration* - Johnathon Cheung
++ *Treasurer* - Cindy Xiao
 
 # Advisors #
 + *ECE Advisor* - Dr. Duncan Elliott
