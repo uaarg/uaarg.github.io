@@ -4,7 +4,7 @@ This website is using the [Jekyll Incorporated](http://incorporated.sendtoinc.co
 ## Installation
 Clone this repository to your local machine.
 
-Assuming you already have Ruby 1.9.3. If not, install it for your system!
+Assuming you already have Ruby 2.3.1 If not, install it for your system!
 
 You'll also need a javascript runtime. Add this to the Gemfile in this directory:
 `gem 'therubyracer'`
