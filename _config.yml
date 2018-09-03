@@ -49,7 +49,7 @@ include:     ['.htaccess']
 exclude:     []
 timezone:    nil
 
-plugins: [jekyll-paginate, jekyll-assets]
+gems: [jekyll-paginate, jekyll-assets]
 
 # Show future posts
 future:      false
@@ -62,7 +62,7 @@ highlighter:    true
 paginate_path: 'blog/page:num'
 paginate: 10
 
-markdown:      Kramdown
+markdown:      kramdown
 markdown_ext:  markdown,mkd,mkdn,md
 textile_ext:   textile
 
