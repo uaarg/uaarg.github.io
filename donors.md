@@ -11,4 +11,4 @@ title: Sponsors
 
 Unmanned, autonomous aerial vehicles are increasingly being used for a a variety of civilian and military applications. The applications of UAVs meet diverse needs including search and rescue, law enforcement, and environmental, forest fire or pipeline monitoring. Imagine the possibilities of a system that flies, records data, analyzes it, and sends back the information you need at the touch of a button! UAVs are able to save large amounts of money and man-power while maintaining safety, efficiency, and accuracy.
 
-Sponsors will have their logo displayed on our competition aircraft as well as on our webpage. If you would like further information, please contact [Cindy Xiao](dixin@ualberta.ca). We look forward to hearing from you!
+Sponsors will have their logo displayed on our competition aircraft as well as on our webpage. If you would like further information, please contact [Johnathan Cheung](mailto:jcheung3@ualberta.ca). We look forward to hearing from you!

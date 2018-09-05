@@ -11,4 +11,4 @@ If you are interested in receiving e-mails about meetings and events,
 Use your CCID and password to login if prompted. 
 
 Alternatively, come to our weekly meetings at 5:00 PM on 
-Tuesdays in ETLC E4-010 or e-mail us at [joinuaarg@gmail.com](mailto:joinuaarg@gmail.com).
+Tuesdays in ETLC E2-002 or e-mail us at [joinuaarg@gmail.com](mailto:joinuaarg@gmail.com).
