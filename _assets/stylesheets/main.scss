@@ -2,9 +2,8 @@
 
 /* Bodytext font */
 $font: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-/* Font for headings */
 $fontheadings: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-base: $font;
 
 /* Text colors */
 $text: #21272d;
@@ -13,9 +12,8 @@ $accent: #2077b2;
 
 
 /* IMPORT CSS FILES */
-@import "bootstrap";
+@import "bootstrap/bootstrap";
 @import "base";
-@import "nav";
 @import "article";
 @import "icons";
 @import "syntax";
