@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if page.title %}{{ page.title }} &mdash; {{ site.inc.title }}{% else %}{{ site.inc.title }} &mdash; {{ site.inc.subtitle }}{% endif %}</title>
     {% if site.inc.google_font %}<link href="https://fonts.googleapis.com/css?family={{ site.inc.google_font }}" rel="stylesheet" type="text/css">{% endif %}
-    {% stylesheet main %}
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="/images/{{ site.inc.logo }}"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    {% stylesheet main %}
     <link href="{{ site_url }}/feed.xml" rel="alternate" type="application/rss+xml" title="{{ site.inc.title }}" />
     <meta name="title" content="{% if page.title %}{{ page.title }} {% else %}{{ site.inc.title }}{% endif %}">
     <link rel="canonical" href="{{ site.url }}{{ page.url }}">
@@ -32,22 +36,44 @@
     
 <section class="site-nav">
     <header>
-        <nav id="navigation">
-            <a class="brand" href="/">
-                <img src="/images/{{ site.inc.logo }}" alt="Inc">
+        <nav class="navbar navbar-expand-lg navbar-light shadow bg-warning">
+            <a class="navbar-brand" href="/">
+                <div class="bg-white rounded shadow">
+                    <img src="/images/{{ site.inc.logo }}" alt="Inc" width="50" height="50">
+                </div>
             </a>
-            <a href="/" class="home">Home</a>
-            {% if site.inc.about_link %}<a href="{{ site.inc.about_link }}">About</a>{% endif %}
-            <a href="/members" class="home">Members</a>
-            <a href="/competitions" class="home">Competitions</a>
-            <a href="/joinus" class="home">Join Us</a>
-            <a href="/donors" class="home">Donors</a>
-            {% if site.inc.product_link %}<a href="{{ site.inc.product_link }}">Product</a>{% endif %}
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/blog" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        {% if site.inc.about_link %}<a href="{{ site.inc.about_link }}" class="nav-link">About</a>{% endif %}
+                    </li>
+                    <li class="nav-item">
+                        <a href="/members" class="nav-link">Members</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/competitions" class="nav-link">Competitions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/donors" class="nav-link">Donors</a>
+                    </li>
+                    <div class="nav-item d-block d-lg-none">
+                        <a href="/joinus" class="btn btn-primary btn-block">Get Involved</a>
+                    </div>
+                </ul>
+            </div>
+            <div class="nav-item ml-auto d-none d-lg-block">
+                <a href="/joinus" class="btn btn-primary btn-sm">Get Involved</a>
+            </div>
         </nav>
-        {% if site.inc.tagline or site.inc.product_url %}<nav class="tagline">
-            {% if site.inc.tagline %}<span>{{ site.inc.tagline }}</span>{% endif %}
-            {% if site.inc.product_link %}<a href="{{ site.inc.product_link }}" class="btn btn-outline">Learn More</a>{% endif %}
-        </nav>{% endif %}
     </header>
 </section>
 
@@ -59,7 +85,7 @@
         
         <nav>
             <a href="{{ site.inc.url }}">{{ site.inc.company }}</a> &middot;
-            <a href="/">Blog</a> &middot;
+            <a href="/blog">Blog</a> &middot;
             {% if site.inc.product_link %}<a href="{{ site.inc.product_link }}">Product</a> &middot; {% endif %}
             {% if site.inc.about_link %}<a href="{{ site.inc.about_link }}">About</a>{% endif %}
         </nav>

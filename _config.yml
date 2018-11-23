@@ -4,7 +4,7 @@ inc:
   # Blog Information
   title:        "UAARG"
   subtitle:     "University of Alberta Aerial Robotics Group"
-  cover_image:  2014-usc-team.jpg
+  cover_image:  home/cover.jpg
   logo:         uaarg-logo.png
   
   # Company information
@@ -68,6 +68,7 @@ collections:
   members:
     # Include Trailing "/"
     image_dir: images/members/
+    cards_per_row: 4
 
 
 # Post/Blog Information

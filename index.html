@@ -2,12 +2,14 @@
 layout: base
 ---
 <div class="blog-cover" style="background-image:url(/images/{{ site.inc.cover_image }});">
-    
     <section>
         <div class="container">
             <h1>{{ site.inc.title }}</h1>
             {% if site.inc.subtitle %}<h3>{{ site.inc.subtitle }}</h3>{% endif %}
-        
+            <h4 class="text-white d-none d-md-block">
+                UAARG is home to a diverse team with a rich history working with UAV hardware and
+                software technologies.
+            </h4>
             {% if site.inc.twitter %}
             <a href="https://twitter.com/{{ site.inc.twitter }}" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter"></i></a>
             {% endif %}
@@ -21,10 +23,88 @@ layout: base
     </section>
 </div>
 
+<!-- Info about club -->
+<article class="container-fluid fancy-rabbit text-white mt-0" id="what-we-do">
+    <h1>What do we do?</h1>
+    <div class="row">
+        <div class="col">
+            <div class="text-center">
+                <i class="fas fa-plane fa-7x"></i>
+            </div>
+            <h3 class="text-center">Airframe Design</h3>
+        </div>
+        <div class="col">
+            <div class="text-center">
+                <i class="fas fa-cogs fa-7x"></i>
+            </div>
+            <h3 class="text-center">Automated UAV Software and Systems</h3>
+        </div>
+        <div class="col">
+            <div class="text-center">
+                <i class="fas fa-trophy fa-7x"></i>
+            </div>
+            <h3 class="text-center">International Competitions</h3>
+        </div>
+    </div>
+</article>
 
+<!-- Our UAV -->
 <article class="container">
-{% for post in paginator.posts %}
-  {% unless post.draft %}
+    <h1>Our UAV:</h1>
+    <div class="row">
+        <div class="col">
+            <img class="shadow-lg rounded" src="{% link images/home/x-8.jpg %}" alt="UAV">
+        </div>
+        <div class="col">
+            <p>Put things about UAV here</p>
+        </div>
+    </div>
+    
+    <div class="row mt-5">
+        <div class="col">
+            <a href="\members" class="btn btn-primary btn-large btn-block" role="button">Come meet our Team!</a>
+        </div>
+        <div class="col">
+            <a href="{{ site.inc.about_link }}" class="btn btn-primary btn-large btn-block" role="button">More about us!</a>
+        </div>
+    </div>
+</article>
+
+<!-- Intro Vid -->
+<article class="container">
+    <h1>Take a peak at our competitions!</h1>
+    <div class="embed-responsive embed-responsive-16by9 shadow-lg w-75 mx-auto">
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/h13ZKuqWESc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</article>
+
+<article class="container-fluid fancy-back slant-right text-white">
+    <h1 class="text-white">Get Involved!</h1>
+    <div class="row">
+        <div class="col-sm">
+            <h2 class="text-white">Your Club. Your Ideas.</h2>
+            <p class="text-white">
+                At UAARG, your ideas drive our innovation. After all what is a club without people?
+            </p>
+            <p class="text-white">
+                Expect your ideas to come to life as you put in meaningful work that has many applications
+                in today's industry. From software, hardware, R & D and business, there are many places at UAARG
+                where you can fit in!
+            </p>
+            <p class="text-white">Come meet our friendly team and:</p>
+            <a href="{% link joinus.md %}" class="d-block d-md-inline-block btn btn-block btn-primary">Get Involved!</a>
+        </div>
+        <div class="col-sm">
+            <img class="animated lightSpeedIn shadow-lg rounded" src="{% link images/home/working-together.jpg %}" alt="Working together">
+        </div>
+    </div>
+</article>
+<article class="container">
+    <!-- Blog Recent-->
+    <hr>
+    <h1>Recent Blog Posts</h1>
+    {% for post in site.posts limit: 3 %}
+    {% unless post.draft %}
     <section class="index">
         <!-- {% if post.author.image %}<img src="/images/{{ post.author.image }}" class="avatar">{% endif %}-->
         <div>
@@ -39,16 +119,6 @@ layout: base
     </section>
     {% endunless %}
     {% endfor %}
-    <section class="pagination" style="text-align:center">
-      {% if paginator.previous_page %}
-        {% if paginator.previous_page == 1 %}
-        <a href="/" class="btn btn-outline">‹ Newer</a>
-        {% else %}
-        <a href="/blog/page{{ paginator.previous_page }}" class="btn btn-outline">‹ Newer</a>
-        {% endif %}
-      {% endif %}
-      {% if paginator.next_page %}
-        <a href="/blog/page{{ paginator.next_page }}" class="btn btn-outline">Older ›</a>
-      {% endif %}
-    </section>
+    <a href="/blog" class="btn btn-info btn-large">See Our Blog!</a>
+
 </article>

@@ -6,4 +6,8 @@
 _site/**
 _site
 # Ignores the SASS cache
-.sass-cache/**
+.sass-cache/
+.asset-cache/
+
+# VS Code cache
+.vscode/

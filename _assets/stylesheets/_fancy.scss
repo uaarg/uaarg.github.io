@@ -1,0 +1,123 @@
+// Fancy headers
+// Make sure to set their backgrounds using bootstrap's `bg-colour` 
+// or use the once provided here
+// Default colours use bootstrap's colour vars
+.bg-green {
+    background: $green;
+}
+.bg-dark-green {
+    background: darken($color: $green, $amount: 25);
+}
+
+.fancy-back {
+    background: $green;
+    position: relative;
+    z-index: 10;
+    &:before,
+    &:after {
+        background: inherit;
+        content: '';
+        display: block;
+        height: 30%;
+        left: 0;
+        position: absolute;
+        right: 0;
+        z-index: -1;
+    }
+    
+    &:before {
+        top: 0;
+        transform: skewY(2.5deg);
+        transform-origin: 100%;
+    }
+    
+    &:after {
+        bottom: 0;
+        transform: skewY(2.5deg);
+        transform-origin: 0;
+    }
+}
+
+.fancy-rabbit {
+    background: $green;
+    position: relative;
+    z-index: 10;
+    
+    @include media-breakpoint-up(sm) {
+        &:before,
+        &:after {
+            background: inherit;
+            content: '';
+            display: block;
+            height: 110%;
+            left: 0;
+            position: absolute;
+            right: 0;
+            z-index: -1;
+        }
+        &:before {
+            top: 0;
+            transform: skewY(3deg);
+            transform-origin: 100%;
+        }
+        
+        &:after {
+            top: 0;
+            transform: skewY(-3deg);
+            transform-origin: 0;
+        }   
+    }
+
+    @include media-breakpoint-down(sm)
+    {
+        &:before,
+        &:after {
+            background: inherit;
+            content: '';
+            display: block;
+            height: 20%;
+            left: 0;
+            position: absolute;
+            right: 0;
+            z-index: -1;
+        }
+        &:before {
+            top: 0;
+            transform: skewY(2deg);
+            transform-origin: 100%;
+        }
+        
+        &:after {
+            top: 0;
+            transform: skewY(-2deg);
+            transform-origin: 0;
+        }  
+    }
+}
+
+.title-slant-left {
+    background: $green;
+    color: white;
+    position: relative;
+    z-index: -1;
+    padding-left: 7%;
+    padding-top: 2%;
+    width: 100vw;
+
+    &:after {
+        background: inherit;
+        content: '';
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        right: 0;
+        z-index: -1;
+    }
+    
+    &:after {
+        bottom: 0;
+        transform: skewY(-2deg);
+        transform-origin: 100%;
+    }
+}

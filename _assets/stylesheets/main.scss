@@ -10,7 +10,6 @@ $text: #21272d;
 $textmuted: #848484;
 $accent: #2077b2;
 
-
 /* IMPORT CSS FILES */
 @import "bootstrap/bootstrap";
 @import "base";
@@ -18,3 +17,11 @@ $accent: #2077b2;
 @import "icons";
 @import "syntax";
 @import "responsive";
+@import "fancy";
+
+/* Card Columns Config*/
+.card-columns {
+    @include media-breakpoint-up(lg) {
+      column-count: 5;
+    }
+  }
