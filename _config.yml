@@ -47,7 +47,7 @@ source:      .
 destination: ./_site
 layouts_dir:     _layouts
 include:     ['.htaccess']
-exclude:     []
+exclude:     ['vendor/']
 timezone:    nil
 
 safe:        false
@@ -69,6 +69,7 @@ collections:
     # Include Trailing "/"
     image_dir: images/members/
     cards_per_row: 4
+    output: true
 
 
 # Post/Blog Information

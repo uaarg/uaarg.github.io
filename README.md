@@ -5,14 +5,30 @@ This website is using the [Jekyll Incorporated](http://incorporated.sendtoinc.co
 Clone this repository to your local machine.
 
 Assuming you already have Ruby 2.3.1 If not, install it for your system!
+```
+sudo apt install ruby
+sudo apt install ruby-dev
+```
 
-You'll also need a javascript runtime. Add this to the Gemfile in this directory:
-`gem 'therubyracer'`
-Then install the required dependencies:
-`bundle install`
+Then install the required dependencies (Recommended to install as project specific rather than as global gems):
+
+```
+bundle install --path vendor/bundle
+```
+
+**Note that any packages installed will need to be prefixed by:**
+```
+bundle exec <Package-Command>
+```
+
+*Why do we install dependencies in project workspace?*  - To prevent clutter in global configurations.
 
 To serve a local version that you can use for testing:
-`jekyll serve --watch`
+```
+bundle exec jekyll serve --watch
+```
+ 
+You can then open your web browser and preview the site by entering the `server address` outputted by the serve command.
     
 ## Configuration
 Edit: _config.yml (general options), main.css (theme colors &amp; fonts)
@@ -29,28 +45,37 @@ _Note: when editing _config.yml, you need to restart jekyll to see the changes._
 
     
 ## Publish to Github Pages
-There are two branches here: `source` and `master`. Make your site configuration changes, write posts, etc. in the `source` branch; the `master` branch is for the published result!
+There are two branches here: `source` and `master`. Make your site configuration changes, write posts, etc. in the `source` branch as this is our development sandbox. 
 
-Once you've made your changes in the `source` branch, you can generate the website with the `rake` task this will modify files in the `_site` directory:
-``` 
-rake generate
-```
+The `master` branch is for the published result. It is what uaarg.com directly renders.
 
 To publish the files into the master branch we will first need to make `_site` a git repository pointing to the `master` branch. This can be accomplished with the `rake` task. (This will only need to be done the first time the repository is cloned) 
 ```
-rake setup
+bundle exec rake setup
+```
+
+Once you've made your changes in the `source` branch, you can generate the website with the `rake` task this will modify files in the `_site` directory:
+``` 
+bundle exec rake generate
 ```
 
 To push the files onto the master branch you can use the `rake` task.
 ```
-rake push
+bundle exec rake push
 ```
 
 To generate and publish the site you can use the the `rake` task as well. This essentially performs `rake generate` followed by `rake push`.
 ```
-rake publish
+bundle exec rake publish
 ```
 
+All the above commands are executed at the root of the project folder. That is, don't execute it in the `_site` folder.
+
+## Editing Content
+
+### Members
+
+Member information can be found in the `collections/_members` directory. Follow the format provided. There is also a format document in the google drive (May need to do digging to find it).
 
 ## Theme Authors
 
