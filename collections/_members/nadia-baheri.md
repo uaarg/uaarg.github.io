@@ -1,6 +1,6 @@
 ---
 name: "Nadia Baheri"
-team: "Executive"
-position: "VP-External"
+team: "TBD"
+position: "TBD"
 image_name: "placeholder.jpg"
 ---
