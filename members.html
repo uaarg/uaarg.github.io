@@ -13,12 +13,12 @@ title: Members
         <div class="card">
             {% if member.image_name %}
             <!-- Image was defined for member -->
-            <img src="{{site.baseurl}}{{ member_coll.image_dir }}{{ member.image_name }}" alt="Member Image" 
-                class="card-img-top">
+            <!-- <img src="{{site.baseurl}}{{ member_coll.image_dir }}{{ member.image_name }}" alt="Member Image"  -->
+                <!-- class="card-img-top"> -->
             {% else %}
             <!-- Using placeholder since image not defined -->
-            <img src="{{site.baseurl}}{{ member_coll.image_dir }}placeholder.jpg" alt="Member Image" 
-                class="card-img-top">
+            <!-- <img src="{{site.baseurl}}{{ member_coll.image_dir }}placeholder.jpg" alt="Member Image"  -->
+                <!-- class="card-img-top"> -->
             {% endif %}
             <div class="card-body">
                 <h5 class="card-title">{{ member.name }}</h5>

@@ -1,7 +1,7 @@
 ---
 name: "Brian Hinrichsen"
-team: "Executive, Pilots, and Safety"
-position: "Co-President"
+team: "Admin"
+position: "The Legendary Ex-President"
 
 # Make sure to keep the quotation marks above!
 ---

@@ -1,7 +1,7 @@
 ---
 name: "Dat Nguyen"
-team: "Autopilot"
-position: "Team Lead"
+team: "Admin"
+position: "Technical Lead"
 image_name: "placeholder.jpg"
 ---
 
