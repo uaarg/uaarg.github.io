@@ -1,0 +1,157 @@
+<!--
+  Lead Developer: Aditya Harvi
+  Assistent Developer: Ricky Au
+  Special thank you to Natalia Oltuszyk for help with the design of the Website.
+
+  Desc:
+    This is the Map web page.
+    It contains the google map location for where the club is located.
+
+  Any code taken from online sources has been credited at the appropriate locations.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Map - UAARG</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/Updatedstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://kit.fontawesome.com/8305a358b9.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- Website Header -->
+<div class="jumbotron text-center myheader">
+  <div class="container-fluid">
+    <!-- Creates a row with the content cetnered and adds in the coloring and style -->
+    <div class="row justify-content-center myheader">
+      <!-- The first 9 columns will have the content pushed to the far right -->
+      <div class="col-md-9 float-right" style="padding-left: 23%;">
+        <!-- This is the logo which is displayed on the yellow bar -->
+        <a href="Home.html"><img src="images/uaarg.jpg" alt="UAARG Logo" class="Logo"></a>
+        <!-- This is the word "Uaarg" which will be hidden away if the screen size is too small -->
+        <b class="hideIfSmall">UAARG</b>
+      </div>
+      <!-- The last 3 columns will be used by the "Join Us" button -->
+      <div class="col-md-3 float-right">
+        <a href="JoinUs.html"><img src="images/Join_Button.jpg" alt="Join Us" class="joinButton hideIfSmall"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- NavBar -->
+<nav class="navbar navbar-expand-md navbar-dark indigo mynavbar sticky-top">
+  <!-- This is the button which gives a downdown menu when the screen size is too small -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+      <span class="navbar-toggler-icon justify-content-center"></span>
+  </button>
+  <!-- This will display every option for the navigation bar while highlighting the current page -->
+  <div class="navbar-collapse collapse justify-content-center order-2" id="collapsingNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link highlight" href="Home.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#8c8c8c'"><b>Home</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link highlight" href="Blog.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#8c8c8c'"><b>Blog</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link highlight" href="About.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#8c8c8c'"><b>About</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link highlight" href="Members.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#8c8c8c'"><b>Members</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link highlight" href="Competitions.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#8c8c8c'"><b>Competitions</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link highlight" href="Donors.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#8c8c8c'"><b>Donors</b></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- "Map" Header -->
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <!-- This is the blurred background header image of the google maps -->
+    <div class="col-12 mapBanner animated fadeInDown"></div>
+    <div class="col-12 BannerText animated fadeInUp">
+      <h1><b>Club Location</b></h1>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<!-- This container is the google maps which the user is able to move around on the website -->
+<div class="container">
+  <div class="embed-responsive embed-responsive-1by1" style="height: 600px;">
+    <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7130.983118519217!2d-113.52579179525563!3d53.52355356144139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a0218a66d9c36b%3A0x1e906351d84521ea!2sElectrical+and+Computing+Engineering+Research+Facility+and+Engineering+Teaching+and+Learning+Complex%2C+Engineering+Teaching+and+Learning+Complex%2C+University+of%2C+9107+116+St+NW%2C+Edmonton%2C+AB+T6G+2V4!5e0!3m2!1sen!2sca!4v1565657256867!5m2!1sen!2sca" width="1100" height="600" frameborder="0" style="border:0" allowfullscreen></iframe></center>
+  </div>
+</div>
+
+<br>
+
+<button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+
+<!-- Footer -->
+<footer class="page-footer font-small mdb-color lighten-3 pt-2" style="background: linear-gradient(to bottom, #373737 0%, #737373 100%);">
+  <!-- Footer Links -->
+  <div class="myContainer text-md-left">
+    <hr style="background: #ffc107;">
+    <!-- Grid row -->
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-10 ">
+        <div class="s-m regular-s-m">
+        <!-- Contact details -->
+        <ul class="list-unstyled">
+          <br>
+          <li>
+            <p><a href="Map.html"><i class="fa fa-home fa-1x"></i></a> University of Alberta ETLC 3rd Floor – Room E3-002</p>
+          </li>
+          <li>
+            <p><a href="Contact.html"><i class="fa fa-envelope fa-1x"></i></a> uaarginfo@gmail.com</p>
+          </li>
+          <li>
+            <p><a href="Shipping.html"><i class="fas fa-shipping-fast"></i></a> 11th floor DICE, 9211-116 Street NW Edmonton, Alberta, Canada T6G 1H9</p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <!-- Grid column -->
+      <hr class="clearfix w-100 d-md-none">
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+        <!-- Social buttons -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Follow Us!</h5>
+        <div class="s-m">
+          <a id="animatedFacebook" href="https://www.facebook.com/uaarg/"><i class="fab fa-facebook"></i></a>
+          <a id="animatedYoutube" href="https://www.youtube.com/user/UAARG"><i class="fab fa-youtube"></i></a>
+        </div>
+        <br>
+        <a href="JoinUs.html"><img src="images/Join_Button.jpg" alt="Join Us" class="footerJoinButton"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="font-size: 20px;">© 2019 Copyright:
+    <a href="Home.html" style="color: #ffc107"> University of Alberta Aerial Robotics Group</a>
+  </div>
+</footer>
+
+<script src="js/myScript.js"></script>
+
+</body>
+</html>

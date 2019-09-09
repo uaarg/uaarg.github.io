@@ -1,0 +1,298 @@
+<!--
+  Lead Developer: Aditya Harvi
+  Assistent Developer: Ricky Au
+  Special thank you to Natalia Oltuszyk for help with the design of the Website.
+
+  Desc:
+    This is the home page.
+    It contains the complete summary-information for the club with links for almost every other page on the site.
+
+  Any code taken from online sources has been credited at the appropriate locations.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home - UAARG</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/Updatedstyle.css">
+  <link rel="stylesheet" href="css/mediaQ.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://kit.fontawesome.com/8305a358b9.js"></script>
+</head>
+<body>
+
+<!-- Website Header -->
+<div class="jumbotron text-center myheader">
+  <div class="container-fluid">
+    <!-- Creates a row with the content cetnered and adds in the coloring and style -->
+    <div class="row justify-content-center myheader">
+      <!-- The first 9 columns will have the content pushed to the far right -->
+      <div class="col-md-9 float-right" style="padding-left: 23%;">
+        <!-- This is the logo which is displayed on the yellow bar -->
+        <a href="Home.html"><img src="images/uaarg.jpg" alt="UAARG Logo" class="Logo"></a>
+        <!-- This is the word "Uaarg" which will be hidden away if the screen size is too small -->
+        <b class="hideIfSmall">UAARG</b>
+      </div>
+      <!-- The last 3 columns will be used by the "Join Us" button -->
+      <div class="col-md-3 float-right">
+        <a href="JoinUs.html"><img src="images/Join_Button.jpg" alt="Join Us" class="joinButton hideIfSmall"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- NavBar -->
+<nav class="navbar navbar-expand-md navbar-dark indigo mynavbar sticky-top">
+  <!-- This is the button which gives a downdown menu when the screen size is too small -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+      <span class="navbar-toggler-icon justify-content-center"></span>
+  </button>
+  <!-- This will display every option for the navigation bar while highlighting the current page -->
+  <div class="navbar-collapse collapse justify-content-center order-2" id="collapsingNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link highlight" href="Home.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='white'"><b>Home</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link highlight" href="Blog.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#8c8c8c'"><b>Blog</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link highlight" href="About.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#8c8c8c'"><b>About</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link highlight" href="Members.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#8c8c8c'"><b>Members</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link highlight" href="Competitions.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#8c8c8c'"><b>Competitions</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link highlight" href="Donors.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#8c8c8c'"><b>Donors</b></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Video Header (This video header was taken from https://tinyurl.com/y54lku36) -->
+<header>
+  <div class="overlay"></div>
+  <!-- This is the video which plays in the background for the header -->
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="firstflight.mp4" type="video/mp4">
+  </video>
+  <div class="container h-100">
+    <!-- This is the text which is displayed over the video -->
+    <div class="d-flex h-100 text-center align-items-center">
+      <div class="w-100">
+        <h1 style="font-size: 100px;">UAARG</h1>
+        <p style="font-size: 30px;">University of Alberta Aerial Robotics Group</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<br>
+
+<!-- Content (Home Page) -->
+<div class="container-fluid">
+  <!-- This is the first visibible 'section' for the home page -->
+  <div class="row justify-content-center">
+    <!-- This is the background image -->
+    <div class="col-12 homePageImg1"></div>
+    <!-- The following visible elements will occupy 12 columns worth of space -->
+    <div class="col-12 homeText">
+      <!-- This is the main title for the section; corrects location of the words/color/size and underlines it -->
+      <center><h1><b style="color: #ffc107; font-size: 80px">What We Do</b></h1></center>
+      <hr style="background: grey; height: 3px;">
+      <!-- This is a new row with the content centered and with 3 yellow boxes-->
+      <div class="row justify-content-center grid3" style="color: black;">
+        <!-- This is the first yellow square containing the airplane and the text associated with it, also links to the about page -->
+        <a href="About.html#airframe" style="text-decoration: none; color: black;"><div class="col-md-4 mt-5 leftDelayReset">
+          <h1 style="padding-top: 30px;">Airframe</h1>
+          <img src="images/airplane.jpg" style="width: 80px; padding-top: 5px; padding-bottom: 5px;">
+          <h1 style="padding-bottom: 30px;">Design</h1></a>
+        </div>
+        <!-- Second yellow square containing the computer and associated text, also links to the about page -->
+        <div class="col-md-4 mt-5 bottomDelayReset">
+          <a href="About.html#airframe" style="text-decoration: none; color: black;"><h1 style="padding-top: 30px;">Automated UAV</h1>
+          <i class="fas fa-laptop-code fixSizeHome" style="padding-top: 5px; padding-bottom: 5px;"></i>
+          <h1 style="padding-bottom: 30px;">Software and Systems</h1></a>
+        </div>
+        <!-- Third yellow square containing the ribbon and associated text. Links to competition page -->
+        <div class="col-md-4 mt-5 rightDelayReset">
+          <a href="Competitions.html" style="text-decoration: none; color: black;"><h1 style="padding-top: 30px;">International</h1>
+          <i class="fas fa-award fixSizeHome" style="padding-top: 5px; padding-bottom: 5px;"></i>
+          <h1 style="padding-bottom: 30px;">Competitions</h1></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- This is the next notable section, a yellow slanted section which overflows onto the surrounding sections -->
+<div class="slantedDivA">
+  <div class="container-fluid">
+    <!-- A new row -->
+    <div class="row justify-content-center">
+      <!-- The title will occupy 12 columns -->
+      <div class="col-12 homeText">
+        <!-- This is the title with the formatting and underline -->
+        <center><h1><b style="color: black;" class="homeTitle">Our Competitions</b></h1></center>
+        <hr style="background: grey; height: 3px;">
+        <!-- The following is information regarding competitions and also properly justifies the information -->
+        <p class="fixSpacing" style="color: black;">Throughout the year, UAARG designs and develops autonomous aircraft for student competitions, where we perform a full flight demonstration of our aircraft. We attend the following competitions each year:</p>
+        <!-- A new row is formed for the animated competition names -->
+        <div class="row justify-content-center" style="color: black; font-size: 35px;">
+          <!-- A competition namee which appears from the right while the full name is appearing from the left, applies to both names. -->
+          <a href="Competitions.html#comp1" style="text-decoration: none; color: black;"><div class="appearanceRight"><b>USC:</b></div>
+          <div class="largeLeftReset">
+            <span>&nbsp Unmanned Systems Canada</span></a>
+          </div>
+        </div>
+        <br>
+        <div class="row justify-content-center appearance" style="color: black; font-size: 35px;">
+          <a href="Competitions.html#comp2" style="text-decoration: none; color: black;"><div class="appearanceRight"><b>AUVSI:</b></div>
+          <div class="largeLeftReset">
+            <span>&nbsp Association of Unmanned Vehicle Systems International</span></a>
+          </div>
+        </div>
+        <br>
+        <center><p style="font-size: 20px; color: black;">Click on a competition to learn more!</p></center>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- This is the new section for the blog -->
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-12 homePageImg2"></div>
+    <div class="col-12 homeText">
+      <center><h1><b style="color: #ffc107; font-size: 80px">Keep Yourself Updated</b></h1></center>
+      <hr style="background: grey; height: 3px;">
+    </div>
+  </div>
+</div>
+
+<!-- This is a section for the  "Join Us"-->
+<div class="slantedDivB fixSpacing">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <!-- Title for the section with underline -->
+      <div class="col-12 homeText">
+        <center><h1><b style="color: black; font-size: 80px">Come Join the Fun!</b></h1></center>
+        <hr style="background: grey; height: 3px;">
+        <!-- The following is the rotating text. The first word is kept as "Your" while the next 5 words are swapped around constantly -->
+        <h1><b class="rotatingText">Your</b>
+          <div class="slidingVertical rotatingText" style="text-align: center;">
+            <span><b>Club.</b></span>
+            <span><b>Ideas.</b></span>
+            <span><b>Voice.</b></span>
+            <span><b>Thoughts.</b></span>
+            <span><b>Designs.</b></span>
+          </div>
+        </h1>
+        <!-- This is the 'content' part for this section -->
+        <div class="col-md-12">
+          <img src="images/groupPhoto.jpg" alt="Group Photo" width="55%" align="right" style="padding-left: 20px;">
+          <p style="color: black;">At UAARG, your ideas drive our innovation. After all what is a club without people?</p>
+          <p style="color: black;">Expect your ideas to come to life as you put in meaningful work that has many applications in today's industry. From software, hardware, R & D and business, there are many places at UAARG where you can fit in!</p>
+          <a href="JoinContact.html" style="color: #ffc107"><button class="buttonEmail" style="vertical-align:middle; color:#ffc107;"><span><b>Join Now</b></span></button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Final section showing the Donors -->
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-12 homePageImg3"></div>
+    <div class="col-12 homeText">
+      <!-- Title with underline -->
+      <center><h1><b style="color: #ffc107" class="homeTitle">Our Generous Sponsors</b></h1></center>
+      <hr style="background: grey; height: 3px;">
+      <!-- Centered text -->
+      <center><p>A special thank you goes out to all of our wonderful sponsors for making this club a reality!</p></center>
+      <!-- a break (empty line) -->
+      <br>
+      <!-- The following are for the images which will appear from the left/right -->
+      <div class="row justify-content-center">
+        <div class="column appearanceLeft">
+          <center><a href="https://www.shell.ca/"><img src="images/shell_logo.jpg" alt="Shell_Canada_Logo" width="80%"></a>
+        </div>
+        <div class="column appearanceRight">
+          <a href="https://www.ualberta.ca/engineering/"><img src="images/eng.jpg" alt="UofA_Engineering_Logo" width="75%"></a></center>
+        </div>
+      </div>
+      <br>
+      <!-- text and the button taking the user to the contacting portion of the site -->
+      <center><p>Check out the link below if you're interested in sponsoring us!</p></center>
+      <center><a href="Contact.html" class="appearanceStay"><button class="button" style="vertical-align:middle"><span><b>Sponsor Us!</b></span></button></a></center>
+    </div>
+  </div>
+</div>
+
+<br></br>
+
+<!-- This button appears when the usre scrolls down and will take them back up to the top of the page when they click on it -->
+<button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+
+<!-- Footer -->
+<footer class="page-footer font-small mdb-color lighten-3 pt-2" style="background: linear-gradient(to bottom, #373737 0%, #737373 100%);">
+  <!-- Footer Links -->
+  <div class="myContainer text-md-left">
+    <hr style="background: #ffc107;">
+    <!-- Grid row -->
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-10 ">
+        <div class="s-m regular-s-m">
+        <!-- Contact details -->
+        <ul class="list-unstyled">
+          <br>
+          <li>
+            <p><a href="Map.html"><i class="fa fa-home fa-1x"></i></a> University of Alberta ETLC 3rd Floor – Room E3-002</p>
+          </li>
+          <li>
+            <p><a href="Contact.html"><i class="fa fa-envelope fa-1x"></i></a> uaarginfo@gmail.com</p>
+          </li>
+          <li>
+            <p><a href="Shipping.html"><i class="fas fa-shipping-fast"></i></a> 11th floor DICE, 9211-116 Street NW Edmonton, Alberta, Canada T6G 1H9</p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <!-- Grid column -->
+      <hr class="clearfix w-100 d-md-none">
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+        <!-- Social buttons -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Follow Us!</h5>
+        <div class="s-m">
+          <a id="animatedFacebook" href="https://www.facebook.com/uaarg/"><i class="fab fa-facebook"></i></a>
+          <a id="animatedYoutube" href="https://www.youtube.com/user/UAARG"><i class="fab fa-youtube"></i></a>
+        </div>
+        <br>
+        <a href="JoinUs.html"><img src="images/Join_Button.jpg" alt="Join Us" class="footerJoinButton"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="font-size: 20px;">© 2019 Copyright:
+    <a href="Home.html" style="color: #ffc107"> University of Alberta Aerial Robotics Group</a>
+  </div>
+</footer>
+
+<script src="js/myScript.js"></script>
+
+</body>
+</html>
