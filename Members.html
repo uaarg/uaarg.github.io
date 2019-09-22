@@ -1,0 +1,231 @@
+---
+layout: default
+---
+<!--
+  Lead Developer: Aditya Harvi
+  Assistent Developer: Ricky Au
+  Special thank you to Natalia Oltuszyk for help with the design of the Website.
+
+  Desc:
+    This is the Members web page.
+    It shows who is in an administration position in the club.
+
+  Any code taken from online sources has been credited at the appropriate locations.
+-->
+<!-- "Members" Header -->
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <!-- This is the blurred background image used for the members page -->
+    <div class="col-12 teamBanner animated fadeInDown"></div>
+    <div class="col-12 BannerText animated fadeInUp">
+      <h1><b>Members</b></h1>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<!-- The following sections are the profile cards for each admin rank in the club. -->
+
+<!-- Presidents -->
+<div class="row justify-content-center mt-5">
+  {% for member in site.members %}
+    {% unless member.position == 'President' %}
+      {% continue %}
+    {% endunless %}
+
+    <div class="col-auto" style="color: Black;">
+      <div class="card myCard appearance" >
+        {% if site.show_member_img %}
+        <!-- <img class="card-img-top" src="{{ site.image_dir }}/{{ member.image_name }}" alt="{{ member.name }}" style="height: 290px;"></img> -->
+        {% endif %}
+        <div class="card-body">
+          <h3 class="card-title"><b>{{ member.name }}</b></h3>
+          <hr style="background: black;">
+          <h4 class="card-title">Team: {{ member.team }} </h4>
+          <p class="card-text">Position: {{ member.position }} </p>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<br>
+
+<!-- VP's -->
+<div class="row justify-content-center mt-5">
+  <div class="col-auto" style="color: Black;">
+    <div class="card myCard appearanceLeft">
+        <!-- <img class="card-img-top" src="{% link assets/images/kabir.jpg %}" alt="Kabir Nadkarni"></img> -->
+      <div class="card-body">
+        <h3 class="card-title"><b>Kabir Nadkarni</b></h3>
+        <hr style="background: black;">
+        <h4 class="card-title">Team: Outreach/ Community<h4>
+        <p class="card-text">Position: VP Outreach</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-auto appearance" style="color: Black;">
+    <div class="card myCard" >
+        <!-- <img class="card-img-top" src="{% link assets/images/bill.jpg %}" alt="Bill Ifemeje"></img> -->
+      <div class="card-body">
+        <h3 class="card-title"><b>Bill Ifemeje</b></h3>
+        <hr style="background: black;">
+        <h4 class="card-title">Team: Administration<h4>
+        <p class="card-text">Position: VP Finance/ Admin</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-auto appearanceRight" style="color: Black;">
+    <div class="card myCard appearance" >
+        <!-- <img class="card-img-top" src="{% link assets/images/dat.jpg %}" alt="Dat Nguyen" style="height: 285px;"></img> -->
+      <div class="card-body">
+        <h3 class="card-title"><b>Dat Nguyen</b></h3>
+        <hr style="background: black;">
+        <h4 class="card-title">Team: Administration<h4>
+        <p class="card-text">Position: VP Technical/ Project Manager</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<!-- Team Leads -->
+<div class="row justify-content-center mt-5">
+  <div class="col-auto" style="color: Black;">
+    <div class="card myCard appearance" >
+        <!-- <img class="card-img-top" src="{% link assets/images/matthew.jpg %}" alt="Matthew Kastner" ></img> -->
+      <div class="card-body">
+        <h3 class="card-title"><b>Matthew Kastner</b></h3>
+        <hr style="background: black;">
+        <h4 class="card-title">Team: Administration<h4>
+        <p class="card-text">Position: Team Lead</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<!-- Co Leads -->
+<div class="row justify-content-center mt-5">
+  <div class="col-auto" style="color: Black;">
+    <div class="card myCard appearanceLeft" >
+        <!-- <img class="card-img-top" src="{% link assets/images/ryan.jpg %}" alt="Ryan Sandoval" style="height: 330px;"></img> -->
+      <div class="card-body">
+        <h3 class="card-title"><b>Ryan Sandoval</b></h3>
+        <hr style="background: black;">
+        <h4 class="card-title">Team: Administration<h4>
+        <p class="card-text">Position: Co-Lead</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-auto" style="color: Black;">
+    <div class="card myCard appearanceRight" >
+        <!-- <img class="card-img-top" src="{% link assets/images/chang.jpg %}" alt="Weilon Chang" style="height: 330px;"></img> -->
+      <div class="card-body">
+        <h3 class="card-title"><b>Weilon Chang</b></h3>
+        <hr style="background: black;">
+        <h4 class="card-title">Team: Administration<h4>
+        <p class="card-text">Position: Co-Lead</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br></br>
+
+<!-- Advisors -->
+<div class="row justify-content-center">
+    <div class="col-auto appearance">
+      <h2><b style="color: #ffc107; font-size: 50px;">Advisors</b></h2>
+    </div>
+</div>
+
+<br>
+
+<div class="row justify-content-center">
+  <center>
+    <div class="col-auto appearanceLeft" style="border: solid #ffc107; text-align: center;">
+      <p>Dr. Duncan Elliott<p>
+      <p>ECE Advisor</p>
+    </div>
+    <!-- This is used to separate the two boxes. It is an empty space -->
+    &nbsp&nbsp&nbsp&nbsp
+    <div class="col-auto appearanceRight" style="border: solid #ffc107; text-align: center;">
+      <p>Dr. Mike Lipsett<p>
+      <p>Mechanical Advisor</p>
+    </div>
+  </center>
+</div>
+
+<br>
+
+<!-- Contact Us Portion -->
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-12 simpleQuestionMemberPage"></div>
+    <div class="col-12 simpleQText">
+      <h1 style="font-size: 70px">Want to <b style="color: #ffc107;">join</b> the team?</h1>
+      <br>
+      <a href="Contact.html" class="appearanceStay"><button class="button" style="vertical-align:middle"><span><b>Contact Us</b></span></button></a>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+
+<!-- Footer -->
+<footer class="page-footer font-small mdb-color lighten-3 pt-2" style="background: linear-gradient(to bottom, #373737 0%, #737373 100%);">
+  <!-- Footer Links -->
+  <div class="myContainer text-md-left">
+    <hr style="background: #ffc107;">
+    <!-- Grid row -->
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-10 ">
+        <div class="s-m regular-s-m">
+        <!-- Contact details -->
+        <ul class="list-unstyled">
+          <br>
+          <li>
+            <p><a href="Map.html"><i class="fa fa-home fa-1x"></i></a> University of Alberta ETLC 3rd Floor – Room E3-002</p>
+          </li>
+          <li>
+            <p><a href="Contact.html"><i class="fa fa-envelope fa-1x"></i></a> uaarginfo@gmail.com</p>
+          </li>
+          <li>
+            <p><a href="Shipping.html"><i class="fas fa-shipping-fast"></i></a> 11th floor DICE, 9211-116 Street NW Edmonton, Alberta, Canada T6G 1H9</p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <!-- Grid column -->
+      <hr class="clearfix w-100 d-md-none">
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+        <!-- Social buttons -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Follow Us!</h5>
+        <div class="s-m">
+          <a id="animatedFacebook" href="https://www.facebook.com/uaarg/"><i class="fab fa-facebook"></i></a>
+          <a id="animatedYoutube" href="https://www.youtube.com/user/UAARG"><i class="fab fa-youtube"></i></a>
+        </div>
+        <br>
+        <a href="JoinUs.html"><img src="{% link assets/images/Join_Button.jpg %}" alt="Join Us" class="footerJoinButton"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="font-size: 20px;">© 2019 Copyright:
+    <a href="Home.html" style="color: #ffc107"> University of Alberta Aerial Robotics Group</a>
+  </div>
+</footer>
+
+<script src="js/myScript.js"></script>

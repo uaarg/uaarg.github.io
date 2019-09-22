@@ -15,11 +15,11 @@ Hi All,
 
 Competition Day 3 has arrived and past. Yesterday we found out that we were team number 31 of 32 for flying. That meant that our flight time would be early in the morning. Big shout out to our base access liason, Brendan. He allowed us to store some equipment in his truck the day before, allowing us to keep our plane ready for launch.
 
-<div class="full zoomable"><img src="/images/compplane.jpg"></div>
+<div class="full zoomable"><img src="/assets/images/compplane.jpg"></div>
 
 We reached the flight time and prepped our plane for launch. Our mission time started at 8:53am. Each member of the team had a specific role. Rijesh was the flight commander, Cindy was the imaging technician, Sebastian was the autopilot technician and Brian was the telemetry technician. Rijesh is also usually our safety pilot, but this competition does provide pilots. The safety pilot was fully debriefed beforehand on the workings of the UAV, autopilot controls, and failsafes. 
 
-<div class="full zoomable"><img src="/images/working.jpg"></div>
+<div class="full zoomable"><img src="/assets/images/working.jpg"></div>
 
 #Mission Time#
 
@@ -29,10 +29,10 @@ At this point the plane was ready for launch. Rijesh hand launched the plane and
 
 Next came the autonomous search area navigation. This task involves the plane autonomously performing a search pattern over a search area, while capturing images of the ground. The autopilot again excelled at this task.
 
-<div class="full zoomable"><img src="/images/flightplan.png"></div>
+<div class="full zoomable"><img src="/assets/images/flightplan.png"></div>
 Flight Plan
 
-<div class="full zoomable"><img src="/images/path.png"></div>
+<div class="full zoomable"><img src="/assets/images/path.png"></div>
 Flight Path
 
 The next two tasks that were attempted were the Off axis target task and emergent target. The off axis target is looking for a target that is outside the operational area. This task was attempted by circling a waypoint near the edge of the operational area at increasing altitudes. We did not find this target. The emergent task involves being given a waypoint at the start of mission time and being able to have the plane autonomously navigate to this target.
@@ -45,16 +45,16 @@ The plane was then landed in autonomous mode and the 900 MHz link was turned off
 
 Right before takeoff we lost our Wi-Fi communication link with the plane. This link is designed to transfer images to our ground imaging station for immeadiate processing. As a result all of our image processing had to be done after the plane had landed.
 
-<div class="full zoomable"><img src="/images/commandtent.jpg"></div>
+<div class="full zoomable"><img src="/assets/images/commandtent.jpg"></div>
 
 Images were then transferred onto ground station computers. Our ground imaging station software is not fully functional so a manual export had to be preformed. Rijesh and Cindy went through the photos reading out load the image number, and target description whenever they found a target. The next step was to manual insert the GPS data for each target. We found all 8 targets. Yay imaging lead!! 
 
 
-<div class="full zoomable"><img src="/images/target.jpg"></div>
+<div class="full zoomable"><img src="/assets/images/target.jpg"></div>
 
 
 
-<div class="full zoomable"><img src="/images/brian_on_trailer.jpg"></div>
+<div class="full zoomable"><img src="/assets/images/brian_on_trailer.jpg"></div>
 
 
 #Results#
@@ -73,7 +73,7 @@ For Autopilot we are looking into autonomous takeoff and landing. As well we are
 
 For Imaging we want to implement an external magnetometer away from current carrying wires to improve compass heading. We also want to do further tests on image capture and autopilot tagging lag. As well our Ground Imaging Station software needs to be improved so that it can be incorporated into our workflow. In reviewing the pictures we actually found the emergent target. Unfortunately we didn't recognize it. Due to our software limitations we were not able to have both imaging operators look at all the images.
 
-<div class="full zoomable"><img src="/images/emerge.jpg"></div>
+<div class="full zoomable"><img src="/assets/images/emerge.jpg"></div>
 
 Boo Imaging lead.
 

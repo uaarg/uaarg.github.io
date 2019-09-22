@@ -21,9 +21,9 @@ Right now we are currently in the midst a developing a fully autonomous launchin
 
 Last Semester we had some major success on the autopilot front. We were able to achieve fully autonomous flight. The following are screenshots from google earth showing the path of the plane.
 
-<div class="full zoomable"><img src="/images/auto2.png"></div>
+<div class="full zoomable"><img src="/assets/images/auto2.png"></div>
 <p/>
-<div class="full zoomable"><img src="/images/auto3.png"></div>
+<div class="full zoomable"><img src="/assets/images/auto3.png"></div>
 
 Further tuning needs to be performed as well as incorporation of airspeed data.
 Stay Tuned.

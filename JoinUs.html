@@ -1,0 +1,128 @@
+---
+layout: default
+---
+<!--
+  Lead Developer: Aditya Harvi
+  Assistent Developer: Ricky Au
+  Special thank you to Natalia Oltuszyk for help with the design of the Website.
+
+  Desc:
+    This is the JoinUs web page.
+    It contains information on when the club meets and how to join them.
+
+  Any code taken from online sources has been credited at the appropriate locations.
+-->
+<!-- "Join Us" Header -->
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <!-- The background image used for the join-us header -->
+    <div class="col-12 squadBanner animated fadeInDown"></div>
+    <div class="col-12 BannerText animated fadeInUp">
+      <h1><b>Join Us!</b></h1>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<!-- Content (Donor Page) -->
+<div class="container" style="margin-top:30px">
+  <!-- New row containing the club information -->
+  <div class="row">
+    <div class="col-xs-12 fixSpacing bottomDelay1" style="font-size:23px;">
+      <p>
+        Any University of Alberta student is welcome to join <b style="color: #ffc107;">regardless of faculty or discipline</b>. If you have an interest in robotics, planes, RC toys, imaging, electronics, computers, programming or just enjoying building things then you would fit right in. Please send us a message or click the link at the top of the page to be added to the mailing list and receive all of the updates on meeting and event times.
+      </p>
+    </div>
+  </div>
+
+  <br>
+  <!-- New row with more information along with a hyperlink which will send the user to a location where they can sign up for some emails for news notifications -->
+  <div class="row">
+    <div class="col-xs-12 fixSpacing bottomDelay2" style="font-size:23px;">
+      <p>
+        If you are interested in receiving e-mails about meetings and events, click <a href="http://www.mailman.srv.ualberta.ca/mailman/listinfo/uaarg-all" style="color: #ffc107;"><b>here</b></a> to subscribe to our mailing list. Use your CCID and password to login if prompted.
+      </p>
+    </div>
+  </div>
+
+  <br>
+  <!-- New row with some information on the club -->
+  <div class="row">
+    <div class="col-xs-12 fixSpacing bottomDelay3" style="font-size:23px;">
+      <p>
+        Alternatively, come to our weekly meetings:
+      </p>
+      <ul class="list-unstyled">
+        <ul>
+          <li>Summer : 11:00 AM on Saturdays in ETLC E3-002</li>
+          <li>Fall/Winter : TBD</li>
+        </ul>
+      </ul>
+    </div>
+  </div>
+
+  <br>
+  <!-- New row linking the user to the join-us contact page -->
+  <div class="row">
+    <div class="col-xs-12 fixSpacing bottomDelay4" style="font-size:23px;">
+      <p>
+        You can also directly email us at  <a href="JoinContact.html" style="color: #ffc107;">joinuaarg@gmail.com</a>.
+      </p>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<!-- Button takes the user back to the top of the screen -->
+<button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+
+<!-- Footer -->
+<footer class="page-footer font-small mdb-color lighten-3 pt-2" style="background: linear-gradient(to bottom, #373737 0%, #737373 100%);">
+  <!-- Footer Links -->
+  <div class="myContainer text-md-left">
+    <hr style="background: #ffc107;">
+    <!-- Grid row -->
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-10 ">
+        <div class="s-m regular-s-m">
+        <!-- Contact details -->
+        <ul class="list-unstyled">
+          <br>
+          <li>
+            <p><a href="Map.html"><i class="fa fa-home fa-1x"></i></a> University of Alberta ETLC 3rd Floor – Room E3-002</p>
+          </li>
+          <li>
+            <p><a href="Contact.html"><i class="fa fa-envelope fa-1x"></i></a> uaarginfo@gmail.com</p>
+          </li>
+          <li>
+            <p><a href="Shipping.html"><i class="fas fa-shipping-fast"></i></a> 11th floor DICE, 9211-116 Street NW Edmonton, Alberta, Canada T6G 1H9</p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <!-- Grid column -->
+      <hr class="clearfix w-100 d-md-none">
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+        <!-- Social buttons -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Follow Us!</h5>
+        <div class="s-m">
+          <a id="animatedFacebook" href="https://www.facebook.com/uaarg/"><i class="fab fa-facebook"></i></a>
+          <a id="animatedYoutube" href="https://www.youtube.com/user/UAARG"><i class="fab fa-youtube"></i></a>
+        </div>
+        <br>
+        <a href="JoinUs.html"><img src="{% link assets/images/Join_Button.jpg %}" alt="Join Us" class="footerJoinButton"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="font-size: 20px;">© 2019 Copyright:
+    <a href="Home.html" style="color: #ffc107"> University of Alberta Aerial Robotics Group</a>
+  </div>
+</footer>
+
+<script src="js/myScript.js"></script>

@@ -1,6 +1,6 @@
 ---
 name: "Bill Ifemeje"
-team: "Airframe"
-position: "Team Lead"
+team: "Admin"
+position: "VP Finance"
 image_name: "placeholder.jpg"
 ---

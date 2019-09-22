@@ -15,7 +15,7 @@ Hi All,
 
 A quick update. Today we are on our way to Southport, Manitoba. The weather looks good. Not much traffic. 
 
-<div class="full zoomable"><img src="/images/loaded_van.jpg"></div>
+<div class="full zoomable"><img src="/assets/images/loaded_van.jpg"></div>
 
 We packed everything in our vehicles yesterday allowing for an early start today. The trip is just over 1200km so we expect to arrive by around 10pm, stopping at an Arby's or two along the way. 
 
