@@ -10,7 +10,6 @@ If you are interested in receiving e-mails about meetings and events,
 Use your CCID and password to login if prompted. 
 
 Alternatively, come to our weekly meetings:
- - Summer : 11:00 AM on Saturdays in ETLC E3-002 
- - Fall and Winter : TBD
+ - Fall 2019 and Winter 2020: Weekly every Fridays @ 5pm in ETLC E3-002 
 
 You can also directly email us at [joinuaarg@gmail.com](mailto:joinuaarg@gmail.com).
