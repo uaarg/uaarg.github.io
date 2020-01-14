@@ -88,6 +88,10 @@ body {
     }
 }
 
+nav .nav-item active {
+  background: white;
+}
+
 /* When the button is hovered over (on the navBar), it will invert the colors */
 .highlight:hover {
   background: #ffc107;
@@ -354,24 +358,23 @@ body {
 
 /* Used in the contact page to format the area where the user enters in information */
 .contactForm {
-  height: 200vh;
+  height: 100vh;
   margin-left: 20%;
   margin-right: 10%;
 }
 
 /* Background image used for the contact page */
 .contactBack {
-  background: url('../images/contactbackground.jpg');
+  background: url('../images/contact.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 200vh;
-  opacity: .8;
+  height: 97vh;
 }
 
 /* Background image used for the join us contact page */
 .joinContact {
-  background: url('../images/JoinContact.jpg');
+  background: url('../images/contact.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -636,7 +639,7 @@ header .overlay {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 90vh;
+  height: 65vh;
   opacity: .3;
   background-attachment: fixed;
 }
@@ -647,6 +650,16 @@ header .overlay {
   background-repeat: no-repeat;
   background-size: cover;
   height: 120vh;
+  opacity: .3;
+  background-attachment: fixed;
+}
+
+.homePageImg4 {
+  background: url('../images/1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
   opacity: .3;
   background-attachment: fixed;
 }
@@ -690,14 +703,14 @@ header .overlay {
 /* Slanted yellow bar on home page but orientated a different direction */
 .slantedDivB {
   position: relative;
-  height: 700px;
+  height: 1000px;
   background: rgba(255, 193, 7, 0.5);
   color: #fff;
 }
 
 .slantedDivB:after {
   position: absolute;
-  height: 100%;
+  height: 87v%;
   content: '';
   background: inherit;
   z-index: -1;
@@ -709,6 +722,15 @@ header .overlay {
   transform: skewY(-4deg);
 }
 
+.contact{
+  background: #ffc107;
+  color: black;
+  border: 2px solid black;
+  text-align: center;
+  align-self: center;
+  padding: 20px;
+}
+
 /* Sets the font size for certain headers on the home page*/
 .homeTitle {
   font-size: 80px;
@@ -716,7 +738,7 @@ header .overlay {
 
 /* This sets the style for the rotating text part */
 .rotatingText {
-  color: black;
+  color: white;
   font-size: 50px;
 }
 
@@ -734,7 +756,7 @@ header .overlay {
   }
   .homePageImg2 {
     height: 200vh;
-  }
+  }te
   .homePageImg3 {
     height: 190vh;
   }
@@ -855,7 +877,7 @@ header .overlay {
 	animation: topToBottom 12.5s linear infinite 0s;
 	-ms-animation: topToBottom 12.5s linear infinite 0s;
 	-webkit-animation: topToBottom 12.5s linear infinite 0s;
-	color: black;
+	color: white;
 	opacity: 0;
 	overflow: hidden;
 	position: absolute;

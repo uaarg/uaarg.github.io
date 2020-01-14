@@ -15,23 +15,15 @@ layout: default
 
 
 
-<!-- Video Header (This video header was taken from https://tinyurl.com/y54lku36) -->
-<header>
-  <div class="overlay"></div>
-  <!-- This is the video which plays in the background for the header -->
-  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-    <source src="{% link assets/videos/first_flight.mp4 %}" type="video/mp4">
-  </video>
-  <div class="container h-100">
-    <!-- This is the text which is displayed over the video -->
-    <div class="d-flex h-100 text-center align-items-center">
-      <div class="w-100">
-        <h1 style="font-size: 100px;">UAARG</h1>
-        <p style="font-size: 30px;">University of Alberta Aerial Robotics Group</p>
-      </div>
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-12 homePageImg4"></div>
+    <div class="col-12 BannerText animated fadeInUp">
+      <h1><b>UAARG</b></h1>
+      <p style="font-size: 30px;">University of Alberta Aerial Robotics Group</p>
     </div>
   </div>
-</header>
+</div>
 
 <br>
 
@@ -42,7 +34,7 @@ layout: default
     <!-- This is the background image -->
     <div class="col-12 homePageImg1"></div>
     <!-- The following visible elements will occupy 12 columns worth of space -->
-    <div class="col-12 homeText">
+    <div class="col-20 homeText">
       <!-- This is the main title for the section; corrects location of the words/color/size and underlines it -->
       <center><h1><b style="color: #ffc107; font-size: 80px">What We Do</b></h1></center>
       <hr style="background: grey; height: 3px;">
@@ -52,7 +44,7 @@ layout: default
         <a href="About.html#airframe" style="text-decoration: none; color: black;"><div class="col-md-4 mt-5 leftDelayReset">
           <h1 style="padding-top: 30px;">Airframe</h1>
           <img src="{% link assets/images/airplane.jpg %}" style="width: 80px; padding-top: 5px; padding-bottom: 5px;">
-          <h1 style="padding-bottom: 30px;">Design</h1></a>
+          <h1 style="padding-bottom: 30px;">Research and Development</h1></a>
         </div>
         <!-- Second yellow square containing the computer and associated text, also links to the about page -->
         <div class="col-md-4 mt-5 bottomDelayReset">
@@ -65,6 +57,7 @@ layout: default
           <a href="Competitions.html" style="text-decoration: none; color: black;"><h1 style="padding-top: 30px;">International</h1>
           <i class="fas fa-award fixSizeHome" style="padding-top: 5px; padding-bottom: 5px;"></i>
           <h1 style="padding-bottom: 30px;">Competitions</h1></a>
+          </div>
         </div>
       </div>
     </div>
@@ -108,62 +101,50 @@ layout: default
 <!-- Social Media -->
 <div class="container-fluid">
   <div class="row justify-content-center">
-    <div class="col-12 homePageImg2">
-      <div class="row justify-content-center">
-        <div class="col-12 homeText">
-          <center><h1><b style="color: #ffc107; font-size: 80px">Keep Yourself Updated</b></h1></center>
-          <hr style="background: grey; height: 3px;">
-
-          <!-- Script for FB Panel -->
-          <div id="fb-root"></div>
-          <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0"></script>
-
-          <!-- FB Panel -->
-          <div class="fb-page" data-href="https://www.facebook.com/uaarg/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/uaarg/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/uaarg/">University of Alberta Aerial Robotics Group</a></blockquote></div>
-
+    <div class="col-12 homePageImg2"></div>
+      <div class="col-12 homeText">
+        <center><h1><b style="color: white; font-size: 80px">Come Join the Fun!</b></h1></center>
+        <hr style="background: white; height: 3px;">
+        <!-- The following is the rotating text. The first word is kept as "Your" while the next 5 words are swapped around constantly -->
+        <div class="row">
+          <h1><b class="rotatingText" width ="55%">Your</b>
+            <div class="slidingVertical rotatingText" style="text-align: center;">
+              <span><b>Club.</b></span>
+              <span><b>Ideas.</b></span>
+              <span><b>Voice.</b></span>
+              <span><b>Thoughts.</b></span>
+              <span><b>Designs.</b></span>
+            </div>
+          </h1> 
+          <div class="col-md-8" style="text-align: right;color:#ffc107"><h1><b>What's New?</b></h1></div>
         </div>
+        <!-- This is the 'content' part for this section -->
+        <div class ="row">
+          <div class="col-md-6"> 
+            <p style="color: white;">At UAARG, your ideas drive our innovation. After all what is a club without people?</p>
+            <p style="color: white;">Expect your ideas to come to life as you put in meaningful work that has many applications in today's industry. From software, hardware, R & D and business, there are many places at UAARG where you can fit in!</p>
+          </div>
+          <div class="col-md-6" style="text-align: right;">
+            <p style="color: white">Currently, we are working on a hybrid plane design which combines the functionality of a quadcopter and a fixed wing plane. </p>
+            <p style="color: white">This allows for vertical takeoff and landing along with long flight times. </p>
+          </div>
+        </div>
+        
+
+        <div class="col-md-12">
+          <center><a href="JoinUs.html" class="appearanceStay"><button class="button" style="vertical-align:middle;"><span><b>Join Now</b></span></button></a></center>     
       </div>
     </div>
   </div>
 </div>
+
 
 <!-- This is a section for the  "Join Us"-->
 <div class="slantedDivB fixSpacing">
   <div class="container-fluid">
     <div class="row justify-content-center">
-      <!-- Title for the section with underline -->
-      <div class="col-12 homeText">
-        <center><h1><b style="color: black; font-size: 80px">Come Join the Fun!</b></h1></center>
-        <hr style="background: grey; height: 3px;">
-        <!-- The following is the rotating text. The first word is kept as "Your" while the next 5 words are swapped around constantly -->
-        <h1><b class="rotatingText">Your</b>
-          <div class="slidingVertical rotatingText" style="text-align: center;">
-            <span><b>Club.</b></span>
-            <span><b>Ideas.</b></span>
-            <span><b>Voice.</b></span>
-            <span><b>Thoughts.</b></span>
-            <span><b>Designs.</b></span>
-          </div>
-        </h1>
-        <!-- This is the 'content' part for this section -->
-        <div class="col-md-12">
-            <img src="{% link assets/images/groupPhoto.jpg %}" alt="Group Photo" width="55%" align="right" style="padding-left: 20px;">
-          <p style="color: black;">At UAARG, your ideas drive our innovation. After all what is a club without people?</p>
-          <p style="color: black;">Expect your ideas to come to life as you put in meaningful work that has many applications in today's industry. From software, hardware, R & D and business, there are many places at UAARG where you can fit in!</p>
-          <a href="JoinContact.html" style="color: #ffc107"><button class="buttonEmail" style="vertical-align:middle; color:#ffc107;"><span><b>Join Now</b></span></button></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Final section showing the Donors -->
-<div class="container-fluid">
-  <div class="row justify-content-center">
-    <div class="col-12 homePageImg3"></div>
     <div class="col-12 homeText">
-      <!-- Title with underline -->
-      <center><h1><b style="color: #ffc107" class="homeTitle">Our Generous Sponsors</b></h1></center>
+      <center><h1><b style="color: white" class="homeTitle">Our Generous Sponsors</b></h1></center>
       <hr style="background: grey; height: 3px;">
       <!-- Centered text -->
       <center><p>A special thank you goes out to all of our wonderful sponsors for making this club a reality!</p></center>
@@ -181,7 +162,8 @@ layout: default
       <br>
       <!-- text and the button taking the user to the contacting portion of the site -->
       <center><p>Check out the link below if you're interested in sponsoring us!</p></center>
-      <center><a href="Contact.html" class="appearanceStay"><button class="button" style="vertical-align:middle"><span><b>Sponsor Us!</b></span></button></a></center>
+      <center><a href="Contact.html" style="color: #ffc107"><button class="buttonEmail" style="vertical-align:middle; color: #ffc107;"><span><b>Sponsor Us!</b></span></button></a></center>
+    </div>
     </div>
   </div>
 </div>
@@ -233,10 +215,10 @@ layout: default
     </div>
   </div>
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3" style="font-size: 20px;">© 2019 Copyright:
-    <a href="Home.html" style="color: #ffc107"> University of Alberta Aerial Robotics Group</a>
+  <div class="footer-copyright text-center py-3" style="font-size: 20px;">
+    <p style="color: white">© 2019 Copyright: University of Alberta Aerial Robotics Group</p>
   </div>
 </footer>
 
-<script src="{% link assets/js/myScript.js %}"></script>
+<script src="assets/js/myScript.js"></script>
 
