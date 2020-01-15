@@ -19,22 +19,22 @@ As a wrap up to canadian competition: we placed 7th out of the 14 teams. We need
 
 On another note here are a bunch of pictures in no particular order:
 
-<div class="full zoomable"><img src="/images/cancomp2016/cancomp_batch_01.JPG"></div>
-<div class="full zoomable"><img src="/images/cancomp2016/cancomp_batch_02.JPG"></div>
-<div class="full zoomable"><img src="/images/cancomp2016/cancomp_batch_03.JPG"></div>
-<div class="full zoomable"><img src="/images/cancomp2016/cancomp_batch_04.JPG"></div>
-<div class="full zoomable"><img src="/images/cancomp2016/cancomp_batch_05.JPG"></div>
-<div class="full zoomable"><img src="/images/cancomp2016/cancomp_batch_06.JPG"></div>
-<div class="full zoomable"><img src="/images/cancomp2016/cancomp_batch_07.JPG"></div>
-<div class="full zoomable"><img src="/images/cancomp2016/cancomp_batch_08.JPG"></div>
-<div class="full zoomable"><img src="/images/cancomp2016/cancomp_batch_09.JPG"></div>
-<div class="full zoomable"><img src="/images/cancomp2016/cancomp_batch_10.JPG"></div>
-<div class="full zoomable"><img src="/images/cancomp2016/cancomp_batch_11.JPG"></div>
-<div class="full zoomable"><img src="/images/cancomp2016/cancomp_batch_12.JPG"></div>
-<div class="full zoomable"><img src="/images/cancomp2016/cancomp_batch_13.JPG"></div>
-<div class="full zoomable"><img src="/images/cancomp2016/cancomp_batch_14.JPG"></div>
-<div class="full zoomable"><img src="/images/cancomp2016/cancomp_batch_15.JPG"></div>
-<div class="full zoomable"><img src="/images/cancomp2016/cancomp_batch_16.JPG"></div>
-<div class="full zoomable"><img src="/images/cancomp2016/cancomp_batch_17.JPG"></div>
-<div class="full zoomable"><img src="/images/cancomp2016/cancomp_batch_18.JPG"></div>
-<div class="full zoomable"><img src="/images/cancomp2016/cancomp_batch_19.JPG"></div>
+<div class="full zoomable"><img src="/assets/images/cancomp2016/cancomp_batch_01.JPG"></div>
+<div class="full zoomable"><img src="/assets/images/cancomp2016/cancomp_batch_02.JPG"></div>
+<div class="full zoomable"><img src="/assets/images/cancomp2016/cancomp_batch_03.JPG"></div>
+<div class="full zoomable"><img src="/assets/images/cancomp2016/cancomp_batch_04.JPG"></div>
+<div class="full zoomable"><img src="/assets/images/cancomp2016/cancomp_batch_05.JPG"></div>
+<div class="full zoomable"><img src="/assets/images/cancomp2016/cancomp_batch_06.JPG"></div>
+<div class="full zoomable"><img src="/assets/images/cancomp2016/cancomp_batch_07.JPG"></div>
+<div class="full zoomable"><img src="/assets/images/cancomp2016/cancomp_batch_08.JPG"></div>
+<div class="full zoomable"><img src="/assets/images/cancomp2016/cancomp_batch_09.JPG"></div>
+<div class="full zoomable"><img src="/assets/images/cancomp2016/cancomp_batch_10.JPG"></div>
+<div class="full zoomable"><img src="/assets/images/cancomp2016/cancomp_batch_11.JPG"></div>
+<div class="full zoomable"><img src="/assets/images/cancomp2016/cancomp_batch_12.JPG"></div>
+<div class="full zoomable"><img src="/assets/images/cancomp2016/cancomp_batch_13.JPG"></div>
+<div class="full zoomable"><img src="/assets/images/cancomp2016/cancomp_batch_14.JPG"></div>
+<div class="full zoomable"><img src="/assets/images/cancomp2016/cancomp_batch_15.JPG"></div>
+<div class="full zoomable"><img src="/assets/images/cancomp2016/cancomp_batch_16.JPG"></div>
+<div class="full zoomable"><img src="/assets/images/cancomp2016/cancomp_batch_17.JPG"></div>
+<div class="full zoomable"><img src="/assets/images/cancomp2016/cancomp_batch_18.JPG"></div>
+<div class="full zoomable"><img src="/assets/images/cancomp2016/cancomp_batch_19.JPG"></div>

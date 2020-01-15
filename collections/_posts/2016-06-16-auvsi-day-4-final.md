@@ -13,24 +13,24 @@ Hi everyone,
 
 We performed our competition flight today. We had a catastrophic crash; read on for more details about that. Here are some nice photos from before the crash.
 
-<div class="full zoomable"><img src="/images/auvsi2016/assembled-plane.JPG"></div>
+<div class="full zoomable"><img src="/assets/images/auvsi2016/assembled-plane.JPG"></div>
 
-<div class="full zoomable"><img src="/images/auvsi2016/loaded-gator.JPG"></div>
+<div class="full zoomable"><img src="/assets/images/auvsi2016/loaded-gator.JPG"></div>
 
 We crashed shortly after takeoff; after performing a manual takeoff, going into auto-stabilized flight mode, then going into fully autonomous flight, the aircraft began maneuvering out of control.
 Rijesh attempted to manually recover the aircraft, but it was too late by that point.
 
 Here are some photos of the debris; unfortunately we don't have any other recovered photos (including from the plane's camera) that show what happened during the crash.
 
-<div class="full zoomable"><img src="/images/auvsi2016/full-wreckage.JPG"></div>
+<div class="full zoomable"><img src="/assets/images/auvsi2016/full-wreckage.JPG"></div>
 
-<div class="full zoomable"><img src="/images/auvsi2016/detached-motor.JPG"></div>
+<div class="full zoomable"><img src="/assets/images/auvsi2016/detached-motor.JPG"></div>
 
-<div class="full zoomable"><img src="/images/auvsi2016/crashed-batteries.JPG"></div>
+<div class="full zoomable"><img src="/assets/images/auvsi2016/crashed-batteries.JPG"></div>
 
-<div class="full zoomable"><img src="/images/auvsi2016/wreckage-on-gator.JPG"></div>
+<div class="full zoomable"><img src="/assets/images/auvsi2016/wreckage-on-gator.JPG"></div>
 
-<div class="full zoomable"><img src="/images/auvsi2016/wreckage-close.JPG"></div>
+<div class="full zoomable"><img src="/assets/images/auvsi2016/wreckage-close.JPG"></div>
 
 Our hypotheses on what caused the crash, after looking at the debris and the logs:
 * Poor wing alignment due to taking off and putting the wings back on at the flight line.
@@ -49,7 +49,7 @@ The final stats on overall team performance:
 We tied for 5th on mission rank with a lot of other teams because we failed to meet the interoperability requirement for confirming that we successfully reached a flight waypoint.
 This is because we did not fly far enough to successfully reach a waypoint.
 
-<div class="full zoomable"><img src="/images/auvsi2016/results.JPG"></div>
+<div class="full zoomable"><img src="/assets/images/auvsi2016/results.JPG"></div>
 
 We'd like to thank the University of Alberta's Faculty of Engineering, the Shell Enhanced Learning Fund, and the University of Alberta's Students' Union for helping to fund us over the past year and for this competition. We'd also like to thank Cameron Lee for his unwavering support, dedication, and advice over the past few years. Finally, we would like to thank our faculty advisors, Dr. Duncan Elliott and Dr. Michael Lipsett for their support of the club. We received some good advice from the judges on what to improve for next year's competition and took note of the good practices from all the teams we met at competition, and are looking forward to doing better next year.
 

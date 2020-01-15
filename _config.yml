@@ -1,151 +1,34 @@
-# Club Information
-# ================
-inc:
-  # Blog Information
-  title:        "UAARG"
-  subtitle:     "University of Alberta Aerial Robotics Group"
-  cover_image:  home/cover.jpg
-  logo:         uaarg-logo.png
-  
-  # Company information
-  company:      University of Alberta Aerial Robotics Group
-  url:          uaarg.com
-  facebook:     uaarg/
-  # twitter:      uaarg
-  # youtube: uaarg
-  # gplus:        '101183822199340201470'
-  about_link:   /about
-  
-  # Comments
-  disqus:
-    # Eg. "exampleblog" Set to false to disable comments
-    shortname: "uaarg"
-  
-  # Sharing settings
-  sharing:
-    twitter:    false
-    facebook:   true
-    gplus:      false
-    hn:         false
-    
-  
- # Analytics     
-  analytics:
-    google: false # Add tracking code in _includes/_google-analytics.html
-      
-      
-  # Google Fonts
-  # eg. 'Droid+Sans:400,700|Droid+Serif:400,700'
-  google_font: 'Droid+Sans:400,700'
-  
-  # Setup your fonts, colors etc at _assets/stylesheets/main.scss
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# Site Information
-# ================
-url:         http://uaarg.com
-source:      .
-destination: ./_site
-layouts_dir:     _layouts
-include:     ['.htaccess']
-exclude:     ['vendor/']
-timezone:    nil
+# Site settings
+# =============
+#
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: UAARG
+email: uaarginfo@uaarg.com
+description: >- # this means to ignore newlines until "baseurl:"
+   Website for the University of Alberta Aerial Robotics Group.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://uaarg.com" # the base hostname & protocol for your site, e.g. http://example.com
 
-safe:        false
-host:        0.0.0.0
-port:        4000
-baseurl:     /
-lsi:         false
+image_dir: "assets/images"
 
-plugins: 
-  - jekyll-paginate
-  - jekyll-assets
+show_member_img: false
 
-# Collections Configuration:
-# ==========================
-# - Contains groupable data
+# Collections
+# ===========
 collections_dir: "collections"
 collections:
-  members:
-    # Include Trailing "/"
-    image_dir: images/members/
-    cards_per_row: 4
-    output: true
+  - members
 
+# Build settings
+# ==============
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
 
-# Post/Blog Information
-# =====================
-
-# Show future posts
-future:      false
-show_drafts: nil
-limit_posts: 0
-highlighter:    true
-
-#relative_permalinks: true
-
-# Pagination Config
-# =================
-# - See Jekyll docs for info
-paginate_path: '/blog/page:num'
-paginate: 5
-
-markdown:      kramdown
-markdown_ext:  markdown,mkd,mkdn,md
-textile_ext:   textile
-
-excerpt_separator: "<!-- more -->"
-
-# Markdown Configuration
-# ======================
-
-maruku:
-  use_tex:    false
-  use_divs:   false
-  png_engine: blahtex
-  png_dir:    images/latex
-  png_url:    /images/latex
-
-rdiscount:
-  extensions: []
-
-redcarpet:
-  extensions: []
-
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-
-  # Legacy Confiuration - Causes warnings!
-  # coderay:
-  #   coderay_wrap: div
-  #   coderay_line_numbers: inline
-  #   coderay_line_numbers_start: 1
-  #   coderay_tab_width: 4
-  #   coderay_bold_every: 10
-  #   coderay_css: style
-
-redcloth:
-  hard_breaks: true
-
-#
-# jekyll-assets: see more at https://github.com/ixti/jekyll-assets
-#
-assets:
-  dirname: assets
-  baseurl: /assets/
-  sources:
-    - _assets/javascripts
-    - _assets/stylesheets
-    - _assets/images
-  js_compressor: uglifier
-  css_compressor: sass
-  gzip: [ text/css, application/javascript ]
-  debug: false
-  caching:
-    path: ".jekyll-cache/assets"
-    type: file # Possible values: memory, file
-    enabled: true

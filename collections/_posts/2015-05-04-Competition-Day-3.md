@@ -19,12 +19,12 @@ We launched the plane into the air and had a successful ~40 second flight. After
 
 We are unsure as to what the crashed as further investigation needs to be done. The plane was flying fine and in very close range. It started an uncontrollable roll and never recovered. One idea is that perhaps the flaperons weren’t fully turned off. If they were only turned off half way this would have resulted in limited recovery ability. Another possibility is 2.4 GHz interference. Two other teams crashed today due to interference on the 2.4 GHz spectrum, and a few others experienced interference.
 
-<div class="full zoomable"><img src="/images/can_crashedplane.jpg"></div>
+<div class="full zoomable"><img src="/assets/images/can_crashedplane.jpg"></div>
 <p/>
 
 The rest of the day was fairly relaxed, with competition photos and packing the plane. We did still submit a report though.
 
-<div class="full zoomable"><img src="/images/report.jpg"></div>
+<div class="full zoomable"><img src="/assets/images/report.jpg"></div>
 <p/>
 
 
@@ -35,7 +35,7 @@ Northrop Grumman was a big sponsor this year. They are fairly well known for Glo
 
 Overall I am fairly impressed with our performance at competition this year. We may not have done well, but our system is a lot more mature and as a team we were able to handle issues as they arose. 
 
-<div class="full zoomable"><img src="/images/canteam.jpg"></div>
+<div class="full zoomable"><img src="/assets/images/canteam.jpg"></div>
 Andrew and Rijesh apparetnly didn't get the memo that UAARG's team shirts were safety vests.
 
 <p/>

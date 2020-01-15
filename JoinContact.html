@@ -1,0 +1,98 @@
+---
+layout: default
+---
+<!--
+  Lead Developer: Aditya Harvi
+  Assistent Developer: Ricky Au
+  Special thank you to Natalia Oltuszyk for help with the design of the Website.
+
+  Desc:
+    This is the JoinUs Contact web page.
+    It contains information on how to join the club and a link which will email the club notifying them the user wants to join.
+
+  Any code taken from online sources has been credited at the appropriate locations.
+-->
+<!-- Contact information and form -->
+<div class="container-fluid joinContact bottomDelay1">
+  <!-- New row with elements centered -->
+  <div class="row contactForm align-items-center">
+    <!-- Creation of yellow box -->
+    <div class="col-10" style="background: #ffc107; color: black; border: 2px solid black;">
+      <h1 style="text-align: center; padding-top: 20px;font-size: 60px"><b>Join Us!</b></h1>
+      <hr style="background: grey;">
+      <!-- Information regarding the club -->
+      <center><address style="padding-top: 20px;">University of Alberta - ETLC E3-002</address>
+      <address> Weekly meetings on saturday at 11am!</address>
+      <center>
+      <div class="center">
+        <!-- Button which sends an email to the club notifying that the user wants to join the club -->
+        <button class="buttonEmail" style="vertical-align:middle; color:#ffc107;"><span><b>
+          <a href="mailto:joinuaarg@gmail.com" style="color: #ffc107">Join Now</a></b></span>
+          </button>
+      </div>
+    </center>
+      <!-- The following is notifying the user that the contact page is used only if they want to join the team and includes a button if they want to ask questions -->
+      <hr>
+      <address><b>Please Note:</b></address>
+      <p>This contact page is specifically if you want to <b>join the team!</b> Click the button below if you have any questions on the club!</p></center>
+      <div class="s-m" style="padding-bottom: 20px;">
+        <center><a id="refreshButton" href="Contact.html"><i class="fas fa-sync-alt"></i></a></center>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<!-- The button will take the user to the top of the screen -->
+<button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+
+<!-- Footer -->
+<footer class="page-footer font-small mdb-color lighten-3 pt-2" style="background: linear-gradient(to bottom, #373737 0%, #737373 100%);">
+  <!-- Footer Links -->
+  <div class="myContainer text-md-left">
+    <hr style="background: #ffc107;">
+    <!-- Grid row -->
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-10 ">
+        <div class="s-m regular-s-m">
+        <!-- Contact details -->
+        <ul class="list-unstyled">
+          <br>
+          <li>
+            <p><a href="Map.html"><i class="fa fa-home fa-1x"></i></a> University of Alberta ETLC 3rd Floor – Room E3-002</p>
+          </li>
+          <li>
+            <p><a href="Contact.html"><i class="fa fa-envelope fa-1x"></i></a> uaarginfo@gmail.com</p>
+          </li>
+          <li>
+            <p><a href="Shipping.html"><i class="fas fa-shipping-fast"></i></a> 11th floor DICE, 9211-116 Street NW Edmonton, Alberta, Canada T6G 1H9</p>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <!-- Grid column -->
+      <hr class="clearfix w-100 d-md-none">
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+        <!-- Social buttons -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Follow Us!</h5>
+        <div class="s-m">
+          <a id="animatedFacebook" href="https://www.facebook.com/uaarg/"><i class="fab fa-facebook"></i></a>
+          <a id="animatedYoutube" href="https://www.youtube.com/user/UAARG"><i class="fab fa-youtube"></i></a>
+        </div>
+        <br>
+        <a href="JoinUs.html"><img src="{% link assets/images/Join_Button.jpg %}" alt="Join Us" class="footerJoinButton"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="font-size: 20px;">© 2019 Copyright:
+    <a href="Home.html" style="color: #ffc107"> University of Alberta Aerial Robotics Group</a>
+  </div>
+</footer>
+
+<script src="js/myScript.js"></script>
+

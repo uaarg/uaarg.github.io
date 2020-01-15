@@ -1,20 +1,10 @@
-# vim
-*~
-*.sw*
-
-# ignores generated site in _site folder. The rake publish task takes care of actually publishing the generated HTML.
-_site/**
 _site
+.sass-cache
+.jekyll-metadata
 
-# Installed dependencies
+
+# Packages
 vendor/
 
-# Ignores the SASS cache
-.sass-cache/
+# Caches
 .asset-cache/
-
-# VS Code cache
-.vscode/
-
-# Bundle
-.bundle
