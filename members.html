@@ -1,0 +1,60 @@
+---
+layout: page
+title: Members
+---
+<div class="card-deck mb-4">
+    {% assign member_coll = site.collections | where: "label", "members" | first %}
+    {% for member in site.members %}
+    {% assign remainder = forloop.index | modulo: member_coll.cards_per_row %}
+    {% if remainder == 1 %}
+</div>
+<div class="card-deck mb-4">
+    {% endif %}
+        <div class="card">
+            {% if member.image_name %}
+            <!-- Image was defined for member -->
+            <!-- <img src="{{site.baseurl}}{{ member_coll.image_dir }}{{ member.image_name }}" alt="Member Image"  -->
+                <!-- class="card-img-top"> -->
+            {% else %}
+            <!-- Using placeholder since image not defined -->
+            <!-- <img src="{{site.baseurl}}{{ member_coll.image_dir }}placeholder.jpg" alt="Member Image"  -->
+                <!-- class="card-img-top"> -->
+            {% endif %}
+            <div class="card-body">
+                <h5 class="card-title">{{ member.name }}</h5>
+                <p class="card-text">Team: {{ member.team }}</p>
+                <p class="card-text">Position: {{ member.position }}</p>
+            </div>
+        </div>
+    {% endfor %}
+    <!-- Padding for cards -->
+    {% assign padding = member_coll.cards_per_row | minus: remainder%}
+    {% for i in (1..padding) %}
+        <div class="card"></div>
+    {% endfor %}
+</div>
+
+<hr>
+
+<h2>Advisors</h2>
+
+<div class="card-deck mb-4">
+    {% for advisor in site.data.advisors %}
+    <div class="card">
+        <div class="card-body">
+            <div class="card-title">{{ advisor.name }}</div>
+            <div class="card-text">{{ advisor.type }}</div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+</article>
+<!-- Momentary break in container -->
+<article class="container-fluid fancy-back slant-right text-white">
+    <h3 class="">
+        <a href="{% link joinus.md %}" class="btn btn-primary btn-block">Get Involved!</a>
+    </h3>
+</article>
+<!-- Container again-->
+<article class="container">
