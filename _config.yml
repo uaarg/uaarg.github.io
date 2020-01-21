@@ -15,9 +15,9 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://uaarg.com" # the base hostname & protocol for your site, e.g. http://example.com
 
-image_dir: "assets/images"
+image_dir: "assets/images/members"
 
-show_member_img: false
+show_member_img: true
 
 # Collections
 # ===========
