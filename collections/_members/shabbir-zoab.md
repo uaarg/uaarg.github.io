@@ -1,7 +1,7 @@
 ---
-name: "Bill Ifemeje"
+name: "Shabbir Zoab"
 team: "Admin"
-position: "VP Admin"
+position: "VP Technical"
 group: "Admins"
 image_name: "placeholder.jpg"
 ---

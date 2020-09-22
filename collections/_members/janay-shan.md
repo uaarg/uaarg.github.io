@@ -1,6 +1,7 @@
 ---
 name: "Janay Shan"
 team: "Admin"
-position: "President"
+position: "Co-President"
+group: "Co-President"
 image_name: "janay.jpg"
 ---

@@ -30,14 +30,14 @@ layout: default
 <!-- Presidents -->
 <div class="row justify-content-center mt-5">
   {% for member in site.members %}
-    {% unless member.position == 'President' %}
+    {% unless member.group == 'Co-President' %}
       {% continue %}
     {% endunless %}
 
     <div class="col-auto" style="color: Black;">
       <div class="card myCard appearance" >
         {% if site.show_member_img %}
-          <img class="card-img-top" src="{{ site.image_dir }}/{{ member.image_name }}" alt="{{ member.name }}" style="height:250px;width:300px;"></img>
+          <!--  <img class="card-img-top" src="{{ site.image_dir }}/{{ member.image_name }}" alt="{{ member.name }}" style="height:250px;width:300px;"></img> -->
         {% endif %}
         <div class="card-body">
           <h3 class="card-title"><b>{{ member.name }}</b></h3>
@@ -54,161 +54,76 @@ layout: default
 
 <!-- VP's -->
 <div class="row justify-content-center mt-5">
-  <div class="col-auto" style="color: Black;">
-    <div class="card myCard appearanceLeft">
-        <img class="card-img-top" src="{% link assets/images/members/kabir.jpg %}" alt="Kabir Nadkarni" style="height:250px;width:300px;"></img>
-      <div class="card-body">
-        <h3 class="card-title"><b>Kabir Nadkarni</b></h3>
-        <hr style="background: black;">
-        <h4 class="card-title">Team: Outreach/ Community<h4>
-        <p class="card-text">Position: VP Outreach</p>
-      </div>
-    </div>
-  </div>
+  {% for member in site.members %}
+    {% unless member.group == 'Admins' %}
+      {% continue %}
+    {% endunless %}
 
-  <div class="col-auto appearance" style="color: Black;">
-    <div class="card myCard" >
-        <img class="card-img-top" src="{% link assets/images/members/bill.jpg %}" alt="Bill Ifemeje" style="height:250px;width:300px;"></img>
-      <div class="card-body">
-        <h3 class="card-title"><b>Samuel Ifemeje</b></h3>
-        <hr style="background: black;">
-        <h4 class="card-title">Team: Administration<h4>
-        <p class="card-text">Position: VP Finance/ Admin</p>
+    <div class="col-auto" style="color: Black;">
+      <div class="card myCard appearance" >
+        {% if site.show_member_img %}
+          <!--  <img class="card-img-top" src="{{ site.image_dir }}/{{ member.image_name }}" alt="{{ member.name }}" style="height:250px;width:300px;"></img> -->
+        {% endif %}
+        <div class="card-body">
+          <h3 class="card-title"><b>{{ member.name }}</b></h3>
+          <hr style="background: black;">
+          <h4 class="card-title">Team: {{ member.team }} </h4>
+          <p class="card-text">Position: {{ member.position }} </p>
+        </div>
       </div>
     </div>
-  </div>
-
-  <div class="col-auto appearance" style="color: Black;">
-    <div class="card myCard" >
-        <img class="card-img-top" src="{% link assets/images/members/brian.jpg %}" alt="Brian Hinrichsen" style="height:250px;width:300px;"></img>
-      <div class="card-body">
-        <h3 class="card-title"><b>Brian Hinrichsen</b></h3>
-        <hr style="background: black;">
-        <h4 class="card-title">Team: Administration<h4>
-        <p class="card-text">Position: IT and Safety</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-auto appearanceRight" style="color: Black;">
-    <div class="card myCard appearance" >
-        <!-- <img class="card-img-top" src="{% link assets/images/dat.jpg %}" alt="Dat Nguyen" style="height: 285px;"></img> -->
-      <div class="card-body">
-        <h3 class="card-title"><b>Dat Nguyen</b></h3>
-        <hr style="background: black;">
-        <h4 class="card-title">Team: Administration<h4>
-        <p class="card-text">Position: VP Technical</p>
-      </div>
-    </div>
-  </div>
+  {% endfor %}
 </div>
 
 <br>
 
 <!-- Team Leads -->
 <div class="row justify-content-center mt-5">
-  <div class="col-auto" style="color: Black;">
-    <div class="card myCard appearance" >
-        <img class="card-img-top" src="{% link assets/images/members/andrew.png %}" alt="Andrew Marklund"style="height:250px;width:300px;" ></img>
-      <div class="card-body">
-        <h3 class="card-title"><b>Andrew Marklund</b></h3>
-        <hr style="background: black;">
-        <h4 class="card-title">Electronics Lead<h4>
-        <p class="card-text">Position: Team Lead</p>
-      </div>
-    </div>
-  </div>
+  {% for member in site.members %}
+    {% unless member.group == 'Leads' %}
+      {% continue %}
+    {% endunless %}
 
-<!-- Co Leads -->
-  <div class="col-auto" style="color: Black;">
-    <div class="card myCard appearanceLeft" >
-        <!-- <img class="card-img-top" src="{% link assets/images/ryan.jpg %}" alt="Ryan Sandoval" style="height: 330px;"></img> -->
-      <div class="card-body">
-        <h3 class="card-title"><b>Ryan Sandoval</b></h3>
-        <hr style="background: black;">
-        <h4 class="card-title">Team: Imaging<h4>
-        <p class="card-text">Position: Co-Lead</p>
+    <div class="col-auto" style="color: Black;">
+      <div class="card myCard appearance" >
+        {% if site.show_member_img %}
+          <!--  <img class="card-img-top" src="{{ site.image_dir }}/{{ member.image_name }}" alt="{{ member.name }}" style="height:250px;width:300px;"></img> -->
+        {% endif %}
+        <div class="card-body">
+          <h3 class="card-title"><b>{{ member.name }}</b></h3>
+          <hr style="background: black;">
+          <h4 class="card-title">Team: {{ member.team }} </h4>
+          <p class="card-text">Position: {{ member.position }} </p>
+        </div>
       </div>
     </div>
-  </div>
-
-  <div class="col-auto" style="color: Black;">
-    <div class="card myCard appearanceRight" >
-        <!-- <img class="card-img-top" src="{% link assets/images/chang.jpg %}" alt="Weilon Chang" style="height: 330px;"></img> -->
-      <div class="card-body">
-        <h3 class="card-title"><b>Weilon Chang</b></h3>
-        <hr style="background: black;">
-        <h4 class="card-title">Team: Imaging<h4>
-        <p class="card-text">Position: Co-Lead</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-auto" style="color: Black;">
-    <div class="card myCard appearanceRight" >
-        <img class="card-img-top" src="{% link assets/images/members/thuong.jpg %}" alt="Thuong Ngyuen" style="height:250px;width:300px;"></img>
-      <div class="card-body">
-        <h3 class="card-title"><b>Thuong Ngyuen</b></h3>
-        <hr style="background: black;">
-        <h4 class="card-title">Team: UGV<h4>
-        <p class="card-text">Position: Lead</p>
-      </div>
-    </div>
-  </div>
+  {% endfor %}
 </div>
 
 <br>
 
 <!-- Other Lead's -->
 <div class="row justify-content-center mt-5">
-  <div class="col-auto" style="color: Black;">
-    <div class="card myCard appearanceLeft">
-        <!-- <img class="card-img-top" src="{% link assets/images/members/shabbir.png %}" alt="Zuhayer Anzum" style="height:250px;width:300px;"></img> -->
-      <div class="card-body">
-        <h3 class="card-title"><b>Zuhayer Anzum</b></h3>
-        <hr style="background: black;">
-        <h4 class="card-title">Team: Piloting<h4>
-        <p class="card-text">Position: Lead</p>
-      </div>
-    </div>
-  </div>
+  {% for member in site.members %}
+    {% unless member.group == 'Leads2' %}
+      {% continue %}
+    {% endunless %}
 
-  <div class="col-auto appearance" style="color: Black;">
-    <div class="card myCard" >
-        <img class="card-img-top" src="{% link assets/images/members/shabbir.png %}" alt="Shabbir Zoab" style="height:250px;width:300px;"></img>
-      <div class="card-body">
-        <h3 class="card-title"><b>Shabbir Zoab</b></h3>
-        <hr style="background: black;">
-        <h4 class="card-title">Team: Airframe<h4>
-        <p class="card-text">Position: Co-Lead</p>
+    <div class="col-auto" style="color: Black;">
+      <div class="card myCard appearance" >
+        {% if site.show_member_img %}
+          <!--  <img class="card-img-top" src="{{ site.image_dir }}/{{ member.image_name }}" alt="{{ member.name }}" style="height:250px;width:300px;"></img> -->
+        {% endif %}
+        <div class="card-body">
+          <h3 class="card-title"><b>{{ member.name }}</b></h3>
+          <hr style="background: black;">
+          <h4 class="card-title">Team: {{ member.team }} </h4>
+          <p class="card-text">Position: {{ member.position }} </p>
+        </div>
       </div>
     </div>
-  </div>
-
-  <div class="col-auto appearance" style="color: Black;">
-    <div class="card myCard" >
-        <img class="card-img-top" src="{% link assets/images/members/nadia.jpg %}" alt="Nadia Baheri" style="height:250px;width:300px;"></img>
-      <div class="card-body">
-        <h3 class="card-title"><b>Nadia Baheri</b></h3>
-        <hr style="background: black;">
-        <h4 class="card-title">Team: Airframe<h4>
-        <p class="card-text">Position: Co-Lead</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-auto appearanceRight" style="color: Black;">
-    <div class="card myCard appearance" >
-        <!-- <img class="card-img-top" src="{% link assets/images/members/liam.jpg %}" alt="Liam Dicke" style="height:250px;width:300px;"></img> -->
-      <div class="card-body">
-        <h3 class="card-title"><b>Liam Dicke</b></h3>
-        <hr style="background: black;">
-        <h4 class="card-title">Team: Autopilot<h4>
-        <p class="card-text">Position: Lead</p>
-      </div>
-    </div>
-  </div>
-</div>  
+  {% endfor %}
+</div> 
 
 <br></br>
 
