@@ -1,5 +1,5 @@
 ---
-name: "Tessa Ngyuen"
+name: "Tessa Nguyen"
 team: "Admin/UGV"
 position: "Treasurer/Lead"
 group: "Admins"
