@@ -28,102 +28,83 @@ layout: default
 <!-- The following sections are the profile cards for each admin rank in the club. -->
 
 <!-- Presidents -->
-<div class="row justify-content-center mt-5">
-  {% for member in site.members %}
-    {% unless member.group == 'Co-President' %}
-      {% continue %}
-    {% endunless %}
+<div class="container">
+  <div class="row">
+    {% for member in site.members %}
+      {% unless member.group == 'Co-President' %}
+        {% continue %}
+      {% endunless %}
 
-    <div class="col-auto" style="color: Black;">
-      <div class="card myCard appearance" >
-        {% if site.show_member_img %}
-          <!--  <img class="card-img-top" src="{{ site.image_dir }}/{{ member.image_name }}" alt="{{ member.name }}" style="height:250px;width:300px;"></img> -->
-        {% endif %}
-        <div class="card-body">
-          <h3 class="card-title"><b>{{ member.name }}</b></h3>
-          <hr style="background: black;">
-          <h4 class="card-title">Team: {{ member.team }} </h4>
-          <p class="card-text">Position: {{ member.position }} </p>
+      <div class="col-sm mt-3" style="color: Black;">
+        <div class="card myCard appearance" >
+          {% if site.show_member_img %}
+            <!--  <img class="card-img-top" src="{{ site.image_dir }}/{{ member.image_name }}" alt="{{ member.name }}" style="height:250px;width:300px;"></img> -->
+          {% endif %}
+          <div class="card-body">
+            <h3 class="card-title"><b>{{ member.name }}</b></h3>
+            <hr style="background: black;">
+            <h4 class="card-title">Team: {{ member.team }} </h4>
+            <p class="card-text">Position: {{ member.position }} </p>
+          </div>
         </div>
       </div>
-    </div>
-  {% endfor %}
+    {% endfor %}
+  </div>
 </div>
 
 <br>
 
 <!-- VP's -->
-<div class="row justify-content-center mt-5">
-  {% for member in site.members %}
-    {% unless member.group == 'Admins' %}
-      {% continue %}
-    {% endunless %}
+<div class="container">
+  <div class="row">
+    {% for member in site.members %}
+      {% unless member.group == 'Admins' or member.group == "Admin" %}
+        {% continue %}
+      {% endunless %}
 
-    <div class="col-auto" style="color: Black;">
-      <div class="card myCard appearance" >
-        {% if site.show_member_img %}
-          <!--  <img class="card-img-top" src="{{ site.image_dir }}/{{ member.image_name }}" alt="{{ member.name }}" style="height:250px;width:300px;"></img> -->
-        {% endif %}
-        <div class="card-body">
-          <h3 class="card-title"><b>{{ member.name }}</b></h3>
-          <hr style="background: black;">
-          <h4 class="card-title">Team: {{ member.team }} </h4>
-          <p class="card-text">Position: {{ member.position }} </p>
+        <div class="col-sm mt-3" style="color: Black;">
+          <div class="card myCard appearance" style="height: 100%;">
+            {% if site.show_member_img %}
+              <!--  <img class="card-img-top" src="{{ site.image_dir }}/{{ member.image_name }}" alt="{{ member.name }}" style="height:250px;width:300px;"></img> -->
+            {% endif %}
+            <div class="card-body">
+              <h3 class="card-title"><b>{{ member.name }}</b></h3>
+              <hr style="background: black;">
+              <h4 class="card-title">Team: {{ member.team }} </h4>
+              <p class="card-text">Position: {{ member.position }} </p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  {% endfor %}
+    {% endfor %}
+  </div>
 </div>
 
 <br>
 
 <!-- Team Leads -->
-<div class="row justify-content-center mt-5">
-  {% for member in site.members %}
-    {% unless member.group == 'Leads' %}
-      {% continue %}
-    {% endunless %}
+<div class="container">
+  <div class="row">
+    {% for member in site.members %}
+      {% unless member.group == 'Leads' %}
+        {% continue %}
+      {% endunless %}
 
-    <div class="col-auto" style="color: Black;">
-      <div class="card myCard appearance" >
-        {% if site.show_member_img %}
-          <!--  <img class="card-img-top" src="{{ site.image_dir }}/{{ member.image_name }}" alt="{{ member.name }}" style="height:250px;width:300px;"></img> -->
-        {% endif %}
-        <div class="card-body">
-          <h3 class="card-title"><b>{{ member.name }}</b></h3>
-          <hr style="background: black;">
-          <h4 class="card-title">Team: {{ member.team }} </h4>
-          <p class="card-text">Position: {{ member.position }} </p>
+      <div class="col-sm-4 mt-3" style="color: Black;">
+        <div class="card myCard appearance" style="height: 100%;">
+          {% if site.show_member_img %}
+            <!--  <img class="card-img-top" src="{{ site.image_dir }}/{{ member.image_name }}" alt="{{ member.name }}" style="height:250px;width:300px;"></img> -->
+          {% endif %}
+          <div class="card-body">
+            <h3 class="card-title"><b>{{ member.name }}</b></h3>
+            <hr style="background: black;">
+            <h4 class="card-title">Team: {{ member.team }} </h4>
+            <p class="card-text">Position: {{ member.position }} </p>
+          </div>
         </div>
       </div>
-    </div>
-  {% endfor %}
+    {% endfor %}
+  </div>
 </div>
-
-<br>
-
-<!-- Other Lead's -->
-<div class="row justify-content-center mt-5">
-  {% for member in site.members %}
-    {% unless member.group == 'Leads2' %}
-      {% continue %}
-    {% endunless %}
-
-    <div class="col-auto" style="color: Black;">
-      <div class="card myCard appearance" >
-        {% if site.show_member_img %}
-          <!--  <img class="card-img-top" src="{{ site.image_dir }}/{{ member.image_name }}" alt="{{ member.name }}" style="height:250px;width:300px;"></img> -->
-        {% endif %}
-        <div class="card-body">
-          <h3 class="card-title"><b>{{ member.name }}</b></h3>
-          <hr style="background: black;">
-          <h4 class="card-title">Team: {{ member.team }} </h4>
-          <p class="card-text">Position: {{ member.position }} </p>
-        </div>
-      </div>
-    </div>
-  {% endfor %}
-</div> 
 
 <br></br>
 
