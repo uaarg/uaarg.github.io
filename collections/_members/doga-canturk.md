@@ -2,6 +2,6 @@
 name: "Doga Canturk"
 team: "Electronics"
 position: "Co-Lead"
-group: "Leads2"
+group: "Leads"
 image_name: "placeholder.jpg"
 ---

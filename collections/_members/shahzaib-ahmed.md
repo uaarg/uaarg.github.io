@@ -1,7 +1,7 @@
 ---
 name: "Shahzaib Ahmed"
-team: "Airframe"
-position: "Lead"
-group: "Leads"
+team: "Admin"
+position: "VP Technical"
+group: "Admin"
 image_name: "placeholder.jpg"
 ---
