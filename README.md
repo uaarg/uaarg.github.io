@@ -12,7 +12,8 @@ sudo apt install ruby-dev
 Then install the required dependencies (Recommended to install as project specific rather than as global gems):
 
 ```
-bundle install --path vendor/bundle
+bundle config set path 'vendor/bundle'
+bundle install
 ```
 
 __To run any insalled packages, use__:
