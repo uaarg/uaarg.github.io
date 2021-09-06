@@ -369,7 +369,7 @@ nav .nav-item active {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 97vh;
+  max-height: 50vh;
 }
 
 /* Background image used for the join us contact page */
