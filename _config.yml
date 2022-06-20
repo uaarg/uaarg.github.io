@@ -24,6 +24,7 @@ show_member_img: true
 collections_dir: "collections"
 collections:
   - members
+  - subteams
 
 # Build settings
 # ==============

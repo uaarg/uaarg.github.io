@@ -14,19 +14,3 @@
   height: calc(100vh - 60px);
   display: block;
 }
-
-.spacer {
-    aspect-ratio: 960/200;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-}
-
-.spacer-1 {
-    background-image: url("../images/separators/home1.svg");
-}
-
-.spacer-2 {
-    background-image: url("../images/separators/home2.svg");
-}
