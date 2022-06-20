@@ -112,20 +112,7 @@ stylesheet: index.css
     <hr style="background: grey; height: 3px;">
     <p class="text-center">A special thank you goes out to all of our wonderful sponsors for making this club a reality!
     </p>
-    <div class="d-grid grid-col-3">
-      <a href="https://shell.ca">
-        {% include image_card.html
-        top="Shell"
-        image="assets/images/shell_logo.jpg"
-        %}
-      </a>
-      <a href="https://ualberta.ca/engineering/">
-        {% include image_card.html
-        top="Faculty of Engineering"
-        image="assets/images/eng.jpg"
-        %}
-      </a>
-    </div>
+    {% include sponsors.html %}
     <p class="text-center mt-4">Check out the link below if you're interested in sponsoring us!</p>
     <a href="{% link Contact.html %}" class="btn btn-primary btn-lg d-block w-50 mx-auto">Sponsor Us!</a>
   </div>
