@@ -1,259 +1,68 @@
 ---
 layout: default
+permalink: /about/
 ---
-<!--
-  Lead Developer: Aditya Harvi
-  Assistent Developer: Ricky Au
-  Special thank you to Natalia Oltuszyk for help with the design of the Website.
-
-  Desc:
-    This is the About web page.
-    It contains information on the club in more detail as well as what each of the devisions do.
-
-  Any code taken from online sources has been credited at the appropriate locations.
--->
-<!-- "About" Header -->
-<div class="container-fluid">
+<section class="container my-4">
   <div class="row justify-content-center">
-    <div class="col-12 aboutBanner animated fadeInDown"></div>
-    <div class="col-12 BannerText animated fadeInUp">
-      <h1><b>About Us</b></h1>
-    </div>
-  </div>
-</div>
-<br>
+    <h1 class="display-2 fw-bold text-primary text-center">Who We Are</h1>
+    <hr>
+    <p>
+      UAARG is a student vehicle project in the Faculty of Engineering. We
+      design and build our own UAV systems, typically of similar size to radio
+      controlled model airplanes. Every year a system is designed, built, tested
+      and then competed internationally. We offer the opportunity for students
+      to put theory into practice and gain valuable design and management
+      experience.
+    </p>
 
-<div class="container" style="margin-top:30px">
-  <div class="row justify-content-center">
-    <div class="col-xs-12 bottomDelay1" style="text-transform: uppercase;">
-      <center><h1><b style="color: #ffc107; font-size: 50px;">Who we are</b></h1></center>
-      <hr style="background: grey; height: 3px;">
-    </div>
-    <div class="col-12 fixSpacing">
-      <center><p class="bottomDelay2" style="font-size:25px;">
-        UAARG is a student vehicle project in the Faculty of Engineering. We design and build our own UAV systems, typically of similar size to radio controlled model airplanes. Every year a system is designed, built, tested and then competed internationally.
-        We offer the opportunity for students to put theory into practice and gain valuable design and management experience. If you join the group you will get the following opportunities:
-      </p></center>
-      <br>
-
-      <div class="row justify-content-center">
-        <div class="col-xs-12" style="font-size:35px;">
-          <p><center class="leftDelay"> Make new <b style="color: #ffc107;">friends </b></center></p>
-          <br>
-          <p><center class="rightDelay"> Develop new <b style="color: #ffc107;">skills </b></center></p>
-          <br>
-          <p><center class="leftDelay"> <b style="color: #ffc107;">Build</b> an airplane </center></p>
-          <br>
-          <p><center class="rightDelay"> Work on an <b style="color: #ffc107;">autopilot </b></center></p>
-          <br>
-          <p><center class="leftDelay"> <b style="color: #ffc107;">Program</b> the on-board computer </center></p>
-          <br>
-          <p><center class="rightDelay"> Help <b style="color: #ffc107;">develop</b> imaging payload <b style="color: #ffc107;">systems </b></center></p>
-          <br>
-          <p><center class="leftDelay"> International <b style="color: #ffc107;">travel </b></center></p>
-          <br>
-          <p><center class="rightDelay"> An awesome <b style="color: #ffc107;">resume booster </b></center></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<br></br>
-
-<!-- "Our Teams" Carousel -->
-<div id="demo" class="carousel slide" data-ride="carousel">
-
-  <!-- Indicators -->
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-    <li data-target="#demo" data-slide-to="3"></li>
-    <li data-target="#demo" data-slide-to="4"></li>
-    <li data-target="#demo" data-slide-to="5"></li>
-    <li data-target="#demo" data-slide-to="6"></li>
-  </ul>
-
-  <!-- The slideshow -->
-  <div class="container" style="margin-top:30px">
-    <div class="row justify-content-center">
-      <div class="col-xs-12 bottomDelay1" style="text-transform: uppercase;">
-        <center><h1><b style="color: #ffc107; font-size: 50px;">Our Teams</b></h1></center>
-        <hr style="background: grey; height: 3px;">
-      </div> 
-    </div>
-  </div>
-
-  <div class="carousel-inner" role="listbox" style=" width:100%; height: 1200px !important;">
-    <div class="carousel-item active">
-        <center><img id="airframe" src="{% link assets/images/about/airframe.png %}" style=" width:90%; height: 1200px;" alt="Airframe"></center>
-      <div class="carousel-caption">
-        <div class="row justify-content-center">
-          <!-- <div class="col-12 aboutBanner animated fadeInDown"></div> -->
-          <div class="col-12 CarouselText animated fadeInUp">
-            <h1><b style="text-transform: uppercase;">Airframe</b></h1>
-            <hr>
-              <div style="font-size:25px; color: white;">
-                <p> The airframe team is the skeleton of the group. 
-                  All systems and equipment of the UAV from other teams is assembled by this team. 
-                  For those who fear heights, the airframe team also possesses a UGV (Unmanned Ground Vehicle) team which is responsible for constructing a small ground vehicle with autonomous capabilities. 
-                  The restrictions of weight and size make this a challenging task to tackle.
-                </p>
-              </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="carousel-item">
-        <center><img src="{% link assets/images/autopilot.jpg %}" style=" width:90%; height: 1200px;" alt="Autopilot"></center>
-      <div class="carousel-caption">
-        <div class="row justify-content-center">
-          <!-- <div class="col-12 aboutBanner animated fadeInDown"></div> -->
-          <div class="col-12 CarouselText animated fadeInUp">
-            <h1><b style="text-transform: uppercase;">Autopilot</b></h1>
-            <hr>
-              <div style="font-size:25px; color: white">
-                <p> Autopilot focuses on the creation and maintenance of autonomous flight capabilities within the UAV and the UGV. 
-                  Additionally, flight plans and Radio control for manual override of the autonomous systems are the responsibility of the autopilot team.               
-                </p>
-              </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="carousel-item">
-        <center><img src="{% link assets/images/imaging.jpg %}" style=" width:90%; height: 1200px;" alt="Imaging"></center>
-      <div class="carousel-caption">
-        <div class="row justify-content-center">
-          <!-- <div class="col-12 aboutBanner animated fadeInDown"></div> -->
-          <div class="col-12 CarouselText animated fadeInUp">
-            <h1><b style="text-transform: uppercase;">Imaging</b></h1>
-            <hr>
-              <div style="font-size:25px; color: white">
-                <p> Imaging Team develops the machine-vision capabilities of our UAVs. 
-                  To accomplish this, we implement primarily software solutions, as well as incorporating hardware components. 
-                  Consequently, our responsibilities also extend beyond only imaging; to support our infrastructure, we also handle networking, interop server integration and many other software projects.
-                </p>
-              </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="carousel-item">
-        <center><img src="{% link assets/images/system.jpg %}" style=" width:90%; height: 1200px;" alt="system"></center>
-      <div class="carousel-caption">
-        <div class="row justify-content-center">
-          <!-- <div class="col-12 aboutBanner animated fadeInDown"></div> -->
-          <div class="col-12 CarouselText animated fadeInUp">
-            <h1><b style="text-transform: uppercase;">Systems</b></h1>
-            <hr>
-              <div style="font-size:25px; color: white">
-                <p> UAARG's Electrical & Electronics Systems Team is responsible for designing, building and integrating the various power and communications components on our autonomous air and ground vehicles. 
-                  We select components to meet each year's design objectives and monitor our systems' performance and efficiency throughout testing. 
-                  Joining the electrical team offers great opportunities for hands-on wiring work, research into cutting-edge UAV electronics, and familiarization with the ins and outs of electric propulsion systems!
-                </p>
-              </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="carousel-item">
-        <center><img src="{% link assets/images/about/piloting.jpg %}" style=" width:90%; height: 1200px;" alt="research"></center>
-      <div class="carousel-caption">
-        <div class="row justify-content-center">
-          <!-- <div class="col-12 aboutBanner animated fadeInDown"></div> -->
-          <div class="col-12 CarouselText animated fadeInUp">
-            <h1><b style="text-transform: uppercase;">Piloting</b></h1>
-            <hr>
-              <div style="font-size:25px; color: white">
-                <p>  If you are fascinated by planes and you are passionate about flying, or if you are interested in learning the beauty of aviation, then this is the team for you. 
-                  Our passionate members are more than happy to help you have the best experience with us. 
-                </p>
-              </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
-
-</div>
-
-<br>
-
-<!-- Contact Us Portion -->
-<div class="container-fluid">
-  <div class="row justify-content-center">
-    <div class="col-12 simpleQuestionAboutPage"></div>
-    <div class="col-12 simpleQText">
-      <h1 style="font-size: 70px"><b style="color: #ffc107;">Curious</b> for more?</h1>
-      <br>
-      <a href="Contact.html" class="appearanceStay"><button class="button" style="vertical-align:middle"><span><b>Contact Us</b></span></button></a>
-    </div>
-  </div>
-</div>
-
-</br>
-
-<button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
-
-<!-- Footer -->
-<footer class="page-footer font-small mdb-color lighten-3 pt-2" style="background: linear-gradient(to bottom, #373737 0%, #737373 100%);">
-  <!-- Footer Links -->
-  <div class="myContainer text-md-left">
-    <hr style="background: #ffc107;">
-    <!-- Grid row -->
     <div class="row">
-      <!-- Grid column -->
-      <div class="col-md-2 col-lg-10 ">
-        <div class="s-m regular-s-m">
-        <!-- Contact details -->
-        <ul class="list-unstyled">
-          <br>
-          <li>
-            <p><a href="Map.html"><i class="fa fa-home fa-1x"></i></a> University of Alberta ETLC 3rd Floor – Room E3-002</p>
-          </li>
-          <li>
-            <p><a href="Contact.html"><i class="fa fa-envelope fa-1x"></i></a> uaarginfo@gmail.com</p>
-          </li>
-          <li>
-            <p><a href="Shipping.html"><i class="fas fa-shipping-fast"></i></a> 11th floor DICE, 9211-116 Street NW Edmonton, Alberta, Canada T6G 1H9</p>
-          </li>
+      <div class="col-sm p-0">
+        <p>Some opportunities in the club include:</p>
+        <ul class="mx-4">
+          <li>Making <span class="text-primary">new friends</span></li>
+          <li>Designing <span class="text-primary">airframe</span> structures</li>
+          <li>Programing <span class="text-primary">autopilot</span> behavior</li>
+          <li>Coding on an <span class="text-primary">embedded system</span> platform</li>
+          <li>Creating <span class="text-primary">electrical</span> systems to power the plane</li>
+          <li>Traveling <span class="text-primary">internationally</span></li>
         </ul>
+        <p>All of these are awesome resume boosters!</p>
       </div>
-      </div>
-      <!-- Grid column -->
-      <hr class="clearfix w-100 d-md-none">
-      <!-- Grid column -->
-      <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
-        <!-- Social buttons -->
-        <h5 class="font-weight-bold text-uppercase mb-4">Follow Us!</h5>
-        <div class="s-m">
-          <a id="animatedFacebook" href="https://www.facebook.com/uaarg/"><i class="fab fa-facebook"></i></a>
-          <a id="animatedYoutube" href="https://www.youtube.com/user/UAARG"><i class="fab fa-youtube"></i></a>
-        </div>
-        <br>
-        <a href="JoinUs.html"><img src="{% link assets/images/Join_Button.jpg %}" alt="Join Us" class="footerJoinButton"></a>
-        </div>
+      <div class="col-lg-6">
+        <img class="img-fluid rounded" src="{% link assets/images/setup1.JPG %}" alt="">
       </div>
     </div>
   </div>
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3" style="font-size: 20px;">
-    <p style="color: white">© 2019 Copyright: University of Alberta Aerial Robotics Group</p>
-  </div>
-</footer>
+</section>
 
-<script src="/assets/js/myScript.js"></script>
+<div class="spacer spacer-1"></div>
+
+<section class="container-fluid bg-primary text-black">
+  <h1 class="display-2 fw-bold text-center">Our Sub-Teams</h1>
+  <div class="container">
+    <hr>
+    <p>
+      UAARG is composed of individual sub-teams that each work on a focused
+      aspect of our drone.  Members are encouraged to join the teams they are
+      most interested in, but to also explore other teams to gain
+      interdisciplinary experience.
+    </p>
+    <p>
+      Below is is an overview of the sub teams in UAARG:
+    </p>
+    <div class="d-flex flex-column gap-2 py-2">
+      {% for team in site.subteams %}
+        {% capture image %}
+          <img class="d-block img-fluid rounded" src="{{ team.image }}">
+        {% endcapture %}
+        {% include large_card.html
+          title=team.title
+          content=team.content
+          sidebar=image
+        %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<div class="spacer spacer-2"></div>

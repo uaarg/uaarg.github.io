@@ -1,0 +1,16 @@
+/** Homepage styles **/
+
+.fs-title {
+    font-size: 4.5rem;
+}
+
+.home-banner {
+  background: url('../videos/website.gif'), rgba(var(--bs-dark-rgb), 0.9);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: calc(100vh - 60px);
+  display: block;
+}
