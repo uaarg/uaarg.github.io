@@ -35,7 +35,7 @@ purchase approvals etc.
 
 ## VP Technical
 
-Responsible for working with all sur is b-team leads and providing guidance / removing task blockers.
+Responsible for working with all sub-team leads and providing guidance / removing task blockers.
 Ensures that the design is sound and integration will go well.
 
 ## VP Admin
@@ -72,7 +72,7 @@ We will be using a preferential voting system - platform still to be determined.
 
 At the end of this period, winning candidates will be announced on Discord.
 
-# Team Leads
+# Sub-Team Leads
 
 Team leads are considered "non-elected positions" so they will be assigned
 by the elected executives after the elections.
