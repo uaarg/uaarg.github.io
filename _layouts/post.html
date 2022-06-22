@@ -4,7 +4,7 @@ layout: default
 
 <style>
     /** Make images responsive automatically **/
-    main img {
+    .post-content img {
         display: block;
         width: 80%;
         height: auto;
@@ -12,6 +12,15 @@ layout: default
         margin-top: 2rem;
         margin-bottom: 2rem;
         border-radius: 0.325rem;
+    }
+
+    .post-content h1 {
+        color: rgb(var(--bs-primary-rgb));
+        text-decoration: underline;
+    }
+
+    .post-content h2 {
+        color: rgb(var(--bs-primary-rgb));
     }
 </style>
 
@@ -24,7 +33,7 @@ layout: default
     </h2>
     <hr>
 
-    <p>
+    <div class="post-content">
         {{ content }}
-    </p>
+    </div>
 </main>
