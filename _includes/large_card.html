@@ -1,0 +1,20 @@
+<div class="card bg-dark flex-row text-white border-0 w-100">
+    <!-- Side adornment -->
+    <div class="bg-secondary flex-shrink-0" style="width: 0.75rem;
+        border-radius: 5px 0 0 5px;"></div>
+
+    <!-- Body -->
+    <div class="card-body">
+        <p class="fs-1 fw-bold">{{ include.title }}</p>
+        <div class="row">
+            <div class="col-sm">
+                {{ include.content }}
+            </div>
+            <div class="col-sm-4">
+                {% if include.sidebar %}
+                    {{ include.sidebar }}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

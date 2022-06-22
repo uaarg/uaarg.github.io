@@ -1,223 +1,124 @@
 ---
 layout: default
+stylesheet: index.css
 ---
-<!--
-  Lead Developer: Aditya Harvi
-  Assistent Developer: Ricky Au
-  Special thank you to Natalia Oltuszyk for help with the design of the Website.
-
-  Desc:
-    This is the home page.
-    It contains the complete summary-information for the club with links for almost every other page on the site.
-
-  Any code taken from online sources has been credited at the appropriate locations.
--->
-
-
-
-<div class="container-fluid">
-  <div class="row justify-content-center">
-    <div class="col-12 homePageImg4"></div>
-    <div class="col-12 BannerText animated fadeInUp">
-      <h1><b>UAARG</b></h1>
-      <p style="font-size: 30px;">University of Alberta Aerial Robotics Group</p>
-    </div>
-  </div>
-</div>
-
-<br>
-
-<!-- Content (Home Page) -->
-<div class="container-fluid">
-  <!-- This is the first visibible 'section' for the home page -->
-  <div class="row justify-content-center">
-    <!-- This is the background image -->
-    <div class="col-12 homePageImg1"></div>
-    <!-- The following visible elements will occupy 12 columns worth of space -->
-    <div class="col-20 homeText">
-      <!-- This is the main title for the section; corrects location of the words/color/size and underlines it -->
-      <center><h1><b style="color: #ffc107; font-size: 80px">What We Do</b></h1></center>
-      <hr style="background: grey; height: 3px;">
-      <!-- This is a new row with the content centered and with 3 yellow boxes-->
-      <div class="row justify-content-center grid3" style="color: black;">
-        <!-- This is the first yellow square containing the airplane and the text associated with it, also links to the about page -->
-        <a href="About.html#airframe" style="text-decoration: none; color: black;"><div class="col-md-4 mt-5 leftDelayReset">
-          <h1 style="padding-top: 30px;">Airframe</h1>
-          <img src="{% link assets/images/airplane.jpg %}" style="width: 80px; padding-top: 5px; padding-bottom: 5px;">
-          <h1 style="padding-bottom: 30px;">Research and Development</h1></a>
-        </div>
-        <!-- Second yellow square containing the computer and associated text, also links to the about page -->
-        <div class="col-md-4 mt-5 bottomDelayReset">
-          <a href="About.html#airframe" style="text-decoration: none; color: black;"><h1 style="padding-top: 30px;">Automated UAV</h1>
-          <i class="fas fa-laptop-code fixSizeHome" style="padding-top: 5px; padding-bottom: 5px;"></i>
-          <h1 style="padding-bottom: 30px;">Software and Systems</h1></a>
-        </div>
-        <!-- Third yellow square containing the ribbon and associated text. Links to competition page -->
-        <div class="col-md-4 mt-5 rightDelayReset">
-          <a href="Competitions.html" style="text-decoration: none; color: black;"><h1 style="padding-top: 30px;">International</h1>
-          <i class="fas fa-award fixSizeHome" style="padding-top: 5px; padding-bottom: 5px;"></i>
-          <h1 style="padding-bottom: 30px;">Competitions</h1></a>
-          </div>
-        </div>
+<section class="home-banner">
+  <div class="container p-4 h-100">
+    <div class="d-flex flex-column align-items-left justify-content-center h-100">
+      <h1 class="display-1 fw-bold text-primary">University of Alberta Aerial Robotics Group</h1>
+      <div>
+        <p class="display-3 fw-bold">Innovate.</p>
+        <p class="display-3 fw-bold">Collaborate.</p>
+        <p class="display-3 fw-bold">Take Flight.</p>
       </div>
     </div>
   </div>
-</div>
+</section>
 
-<!-- This is the next notable section, a yellow slanted section which overflows onto the surrounding sections -->
-<div class="slantedDivA">
-  <div class="container-fluid">
-    <!-- A new row -->
-    <div class="row justify-content-center">
-      <!-- The title will occupy 12 columns -->
-      <div class="col-12 homeText">
-        <!-- This is the title with the formatting and underline -->
-        <center><h1><b style="color: black;" class="homeTitle">Our Competitions</b></h1></center>
-        <hr style="background: grey; height: 3px;">
-        <!-- The following is information regarding competitions and also properly justifies the information -->
-        <p class="fixSpacing" style="color: black;">Throughout the year, UAARG designs and develops autonomous aircraft for student competitions, where we perform a full flight demonstration of our aircraft. We attend the following competitions each year:</p>
-        <!-- A new row is formed for the animated competition names -->
-        <div class="row justify-content-center" style="color: black; font-size: 35px;">
-          <!-- A competition namee which appears from the right while the full name is appearing from the left, applies to both names. -->
-          <a href="Competitions.html#comp1" style="text-decoration: none; color: black;"><div class="appearanceRight"><b>USC:</b></div>
-          <div class="largeLeftReset">
-            <span>&nbsp Unmanned Systems Canada</span></a>
-          </div>
-        </div>
-        <br>
-        <div class="row justify-content-center appearance" style="color: black; font-size: 35px;">
-          <a href="Competitions.html#comp2" style="text-decoration: none; color: black;"><div class="appearanceRight"><b>AUVSI:</b></div>
-          <div class="largeLeftReset">
-            <span>&nbsp Association of Unmanned Vehicle Systems International</span></a>
-          </div>
-        </div>
-        <br>
-        <center><p style="font-size: 20px; color: black;">Click on a competition to learn more!</p></center>
-      </div>
-    </div>
-  </div>
-</div>
+<section class="container my-4">
+  <h1 class="text-primary display-2 fw-bold text-center">What We Do</h1>
+  <hr style="background: grey; height: 3px;">
 
-<!-- Social Media -->
-<div class="container-fluid">
-  <div class="row justify-content-center">
-    <div class="col-12 homePageImg2"></div>
-      <div class="col-12 homeText">
-        <center><h1><b style="color: white; font-size: 80px">Come Join the Fun!</b></h1></center>
-        <hr style="background: white; height: 3px;">
-        <!-- The following is the rotating text. The first word is kept as "Your" while the next 5 words are swapped around constantly -->
-        <div class="row">
-          <h1><b class="rotatingText" width ="55%">Your</b>
-            <div class="slidingVertical rotatingText" style="text-align: center;">
-              <span><b>Club.</b></span>
-              <span><b>Ideas.</b></span>
-              <span><b>Voice.</b></span>
-              <span><b>Thoughts.</b></span>
-              <span><b>Designs.</b></span>
-            </div>
-          </h1> 
-          <div class="col-md-8" style="text-align: right;color:#ffc107"><h1><b>What's New?</b></h1></div>
-        </div>
-        <!-- This is the 'content' part for this section -->
-        <div class ="row">
-          <div class="col-md-6"> 
-            <p style="color: white;">At UAARG, your ideas drive our innovation. After all what is a club without people?</p>
-            <p style="color: white;">Expect your ideas to come to life as you put in meaningful work that has many applications in today's industry. From software, hardware, R & D and business, there are many places at UAARG where you can fit in!</p>
-          </div>
-          <div class="col-md-6" style="text-align: right;">
-            <p style="color: white">Currently, we are working on a hybrid plane design which combines the functionality of a quadcopter and a fixed wing plane. </p>
-            <p style="color: white">This allows for vertical takeoff and landing along with long flight times. </p>
-          </div>
-        </div>
-        
+  <div class="d-grid grid-col-3">
+    {% include icon_card.html
+    top="Automated UAV"
+    icon="laptop-code"
+    bottom="Software and Systems" %}
+    {% include image_card.html
+    top="Airframe"
+    image="assets/images/airplane.jpg"
+    bottom="Research and Development" %}
+    {% include icon_card.html
+    top="International"
+    icon="medal"
+    bottom="Competitions" %}
+  </div> <!-- End Card Row-->
+</section>
 
-        <div class="col-md-12">
-          <center><a href="JoinUs.html" class="appearanceStay"><button class="button" style="vertical-align:middle;"><span><b>Join Now</b></span></button></a></center>     
-      </div>
-    </div>
-  </div>
-</div>
+<div class="spacer spacer-1"></div>
 
-<!-- This is a section for the  "Join Us"-->
-<div class="slantedDivB fixSpacing">
-  <div class="container-fluid">
-    <div class="row justify-content-center">
-    <div class="col-12 homeText">
-      <center><h1><b style="color: white" class="homeTitle">Our Generous Sponsors</b></h1></center>
-      <hr style="background: grey; height: 3px;">
-      <!-- Centered text -->
-      <center><p>A special thank you goes out to all of our wonderful sponsors for making this club a reality!</p></center>
-      <!-- a break (empty line) -->
-      <br>
-      <!-- The following are for the images which will appear from the left/right -->
-      <div class="row justify-content-center">
-        <div class="column appearanceLeft">
-            <center><a href="https://www.shell.ca/"><img src="{% link assets/images/shell_logo.jpg %}" alt="Shell_Canada_Logo" width="80%"></a>
-        </div>
-        <div class="column appearanceRight">
-            <a href="https://www.ualberta.ca/engineering/"><img src="{% link assets/images/eng.jpg %}" alt="UofA_Engineering_Logo" width="75%"></a></center>
-        </div>
-      </div>
-      <br>
-      <!-- text and the button taking the user to the contacting portion of the site -->
-      <center><p>Check out the link below if you're interested in sponsoring us!</p></center>
-      <center><a href="Contact.html" style="color: #ffc107"><button class="buttonEmail" style="vertical-align:middle; color: #ffc107;"><span><b>Sponsor Us!</b></span></button></a></center>
-    </div>
-    </div>
-  </div>
-</div>
-
-<br></br>
-
-<!-- This button appears when the usre scrolls down and will take them back up to the top of the page when they click on it -->
-<button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
-
-<!-- Footer -->
-<footer class="page-footer font-small mdb-color lighten-3 pt-2" style="background: linear-gradient(to bottom, #373737 0%, #737373 100%);">
-  <!-- Footer Links -->
-  <div class="myContainer text-md-left">
-    <hr style="background: #ffc107;">
-    <!-- Grid row -->
+<section class="container-fluid bg-primary text-dark pb-4">
+  <div class="container-md">
+    <h2 class="display-2 fw-bold text-center">Our Competitions</h2>
+    <hr style="background: grey; height: 3px;">
+    <p>Throughout the year, UAARG designs and develops autonomous aircraft
+      for student competitions, where we perform a full flight demonstration of our aircraft. We attend the
+      following competitions each year:</p>
     <div class="row">
-      <!-- Grid column -->
-      <div class="col-md-2 col-lg-10 ">
-        <div class="s-m regular-s-m">
-        <!-- Contact details -->
-        <ul class="list-unstyled">
-          <br>
-          <li>
-            <p><a href="Map.html"><i class="fa fa-home fa-1x"></i></a> University of Alberta ETLC 3rd Floor – Room E3-002</p>
-          </li>
-          <li>
-            <p><a href="Contact.html"><i class="fa fa-envelope fa-1x"></i></a> uaarginfo@gmail.com</p>
-          </li>
-          <li>
-            <p><a href="Shipping.html"><i class="fas fa-shipping-fast"></i></a> 11th floor DICE, 9211-116 Street NW Edmonton, Alberta, Canada T6G 1H9</p>
-          </li>
-        </ul>
+      <div class="col-sm">
+        <a href="{% link Competitions.html%}#comp1">
+          <p class="fw-bold">USC:<span>&nbsp Unmanned Systems Canada</span></p>
+        </a>
+        <a href="{% link Competitions.html%}#comp2">
+          <p class="fw-bold">AUVSI:<span>&nbsp Association of Unmanned Vehicle Systems International</span></p>
+        </a>
+        <p>UAARG also has a blog where we document our competitions and work:</p>
+        <a href="{% link blog/index.html %}" class="btn btn-primary btn-lg d-block">Check out our Blog</a>
       </div>
-      </div>
-      <!-- Grid column -->
-      <hr class="clearfix w-100 d-md-none">
-      <!-- Grid column -->
-      <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
-        <!-- Social buttons -->
-        <h5 class="font-weight-bold text-uppercase mb-4">Follow Us!</h5>
-        <div class="s-m">
-          <a id="animatedFacebook" href="https://www.facebook.com/uaarg/"><i class="fab fa-facebook"></i></a>
-          <a id="animatedYoutube" href="https://www.youtube.com/user/UAARG"><i class="fab fa-youtube"></i></a>
-        </div>
-        <br>
-        <a href="JoinUs.html"><img src="{% link assets/images/Join_Button.jpg %}" alt="Join Us" class="footerJoinButton"></a>
-        </div>
+      <div class="col-sm">
+        <img class="img-fluid rounded" src="{% link /assets/images/home/working-together.jpg %}">
       </div>
     </div>
   </div>
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3" style="font-size: 20px;">
-    <p style="color: white">© 2019 Copyright: University of Alberta Aerial Robotics Group</p>
+</section>
+
+<div class="spacer spacer-2"></div>
+
+<section class="container-fluid mb-4">
+  <div class="container">
+    <h1 class="fw-bold display-2 text-center">Come Join the Fun!</h1>
+    <hr style="background: white; height: 3px;">
+    <div class="row">
+      <div class="col-sm">
+        <h1 class="fw-bold rotatingText" width="55%">Your
+          <span class="slidingVertical rotatingText text-primary" style="text-align: center;">
+            <span>Club.</span>
+            <span>Ideas.</span>
+            <span>Voice.</span>
+            <span>Thoughts.</span>
+            <span>Designs.</span>
+          </span>
+        </h1>
+        <div>
+          <p>
+            At UAARG, your ideas drive our innovation. After all what is a club without people?
+          </p>
+          <p>
+            Expect your ideas to come to life as you put in meaningful work that has many
+            applications in today's industry. From software, hardware, R & D and business, there are many places at
+            UAARG where you can fit in!
+          </p>
+          <p>
+            Currently, we are working on a hybrid plane design which combines the functionality of
+            a quadcopter and a fixed wing plane.
+          </p>
+          <p>
+            This allows for vertical takeoff and landing along with long flight times.
+          </p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <img src="{% link /assets/images/home/team.jpg %}" class="img-fluid rounded">
+      </div>
+    </div>
   </div>
-</footer>
+  <a href="{% link Contact.html %}" class="btn btn-primary btn-lg d-block w-50 mx-auto">Join Now!</a>
+</section>
+
+<div class="spacer spacer-1"></div>
+
+<section class="container-fluid bg-primary text-dark pb-4">
+  <div class="container">
+    <h1 class="fw-bold text-center display-2">Our Generous Sponsors</h1>
+    <hr style="background: grey; height: 3px;">
+    <p class="text-center">A special thank you goes out to all of our wonderful sponsors for making this club a reality!
+    </p>
+    {% include sponsors.html %}
+    <p class="text-center mt-4">Check out the link below if you're interested in sponsoring us!</p>
+    <a href="{% link Contact.html %}" class="btn btn-primary btn-lg d-block w-50 mx-auto">Sponsor Us!</a>
+  </div>
+</section>
+
+<div class="spacer spacer-2"></div>
 
 <script src="assets/js/myScript.js"></script>
-

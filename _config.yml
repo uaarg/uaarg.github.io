@@ -15,6 +15,9 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://uaarg.com" # the base hostname & protocol for your site, e.g. http://example.com
 
+paginate: 5
+paginate_path: "/blog/:num/"
+
 image_dir: "assets/images/members"
 
 show_member_img: true
@@ -23,7 +26,9 @@ show_member_img: true
 # ===========
 collections_dir: "collections"
 collections:
+  - posts
   - members
+  - subteams
 
 # Build settings
 # ==============
@@ -31,4 +36,5 @@ markdown: kramdown
 theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
