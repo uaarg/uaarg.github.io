@@ -17,13 +17,13 @@ stylesheet: contact.css
         enjoying
         building things then you would fit right in!
       </p>
-      <p>Reach out to us at <a href="mailto:joinuaarg@gmail.com">joinuaarg@gmail.com</a></p>
+      <p>Reach out to us at <a href="mailto:{{ site.emails.join | encode_email }}">{{ site.emails.join }}</a></p>
     </div>
     <div class="col">
       <h2 class="text-primary">Looking to sponsor us?</h2>
       <p>UAARG is always keen on working with potential sponsors since it helps bring our projects to fruition! 
       </p>
-      <p>Please send any questions to <a href="mailto:uaarginfo@gmail.com">uaarginfo@gmail.com</a></p>
+      <p>Please send any questions to <a href="mailto:{{ site.emails.info | encode_email }}">{{ site.emails.info }}</a></p>
     </div>
   </div>
   <div class="get-involved rounded d-flex justify-content-center align-items-center">
