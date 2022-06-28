@@ -65,6 +65,22 @@ they will accept the nominations - they may either accept or decline.
 During this time, candidates who want to run together can do so by letting the 
 election organizer know.
 
+Nominations can still be sent to the election organizer during this time.
+
+### Multiple Nominations
+
+If a candidate receives multiple nominations, they may run for multiple positions.
+There are 3 outcomes in this scenario:
+
+1. If the candidate does not win any positions, the candidate will not hold a
+   position.
+2. If the candidate wins only one position, then the candidate will hold that
+   position.
+3. If the candidate wins multiple positions, then the candidate may choose
+   which position they would like. The elected member for the rest of the
+   positions (i.e. the positions the candidate did not select) will be the
+   runner up.
+
 ## Election Period (1 Week)
 
 All UAARG members can then vote on who will take the positions. 
@@ -76,6 +92,8 @@ At the end of this period, winning candidates will be announced on Discord.
 
 Team leads are considered "non-elected positions" so they will be assigned
 by the elected executives after the elections.
+
+**Therefore, sub-team lead positions are not eligible for nomination.**
 
 These positions include:
 
