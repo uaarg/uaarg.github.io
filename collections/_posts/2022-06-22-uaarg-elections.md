@@ -54,8 +54,8 @@ The election process has 3 phases:
 ## Nomination Period (1 Week)
 
 During this period, any UAARG member may nominate themselves or another person
-for the above 4 positions. For the 2022 election please, send nominations
-Ryan Sandoval.
+for the above 4 positions. Please send your nominations to the election
+organizer on Discord.
 
 ## Nomination Acceptance Period (Less than 5 days)
 
@@ -81,10 +81,13 @@ There are 3 outcomes in this scenario:
    positions (i.e. the positions the candidate did not select) will be the
    runner up.
 
-## Election Period (1 Week)
+## Election Period (1.5 Weeks)
 
 All UAARG members can then vote on who will take the positions. 
-We will be using a preferential voting system - platform still to be determined.
+We will be using an anonymous preferential voting system facilitated by the
+election system on Bears Den.
+
+If there is only one candidate for a position, they will be automatically elected.
 
 At the end of this period, winning candidates will be announced on Discord.
 
@@ -104,4 +107,4 @@ These positions include:
 - etc.
 
 
-... And that's it! Let us know if you have any questions.
+... And that's it! Let us know on Discord if you have any questions.
