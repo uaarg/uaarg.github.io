@@ -1,7 +1,6 @@
 ---
 name: "Alina Iunusova"
-team: "Autopilot"
-position: "Lead"
-group: "Leads"
+team: "Admin"
+position: "VP Admin"
 image_name: "placeholder.jpg"
 ---

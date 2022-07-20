@@ -1,6 +1,6 @@
 ---
-name: "Carl Berresheim"
+name: "Dhruv Manish Pranlal"
 team: "Admin"
-position: "VP Technical"
+position: "VP Admin"
 image_name: "placeholder.jpg"
 ---

@@ -36,6 +36,7 @@ collections:
   - posts
   - members
   - subteams
+  - past_members
 
 # Build settings
 # ==============

@@ -4,50 +4,42 @@ permalink: /members/
 ---
 
 <section class="container my-4">
-  <h1 class="display-2 fw-bold text-center text-primary">Executive Team</h1>
+  <h1 class="display-2 fw-bold text-center text-primary">Members</h1>
+</section>
+
+<!-- Exec Team -->
+<section class="container">
+  <h2 class="fs-1 fw-bold text-primary text-center">Executive Team</h2>
   <hr>
-</section>
-
-<!-- Presidents -->
-<section class="container">
-  <div class="row row-cols-md-2 row-cols-1">
-    {% for member in site.members %}
-      {% unless member.group == 'Co-President' %}
-        {% continue %}
-      {% endunless %}
-      {% include member_card.html
-        name=member.name
-        team=member.team
-      %}
-    {% endfor %}
-  </div>
-</section>
-
-<!-- VP's -->
-<section class="container">
   <div class="row row-cols-md-3 row-cols-1">
     {% for member in site.members %}
-      {% unless member.group == 'Admins' or member.group == "Admin" %}
+      {% unless member.team == "Admin" %}
         {% continue %}
       {% endunless %}
+      <div style="order: {{ member.order | default: 0 }}">
       {% include member_card.html
         name=member.name
         team=member.team
+        position=member.position
       %}
+      </div>
     {% endfor %}
   </div>
 </section>
 
 <!-- Team Leads -->
-<section class="container">
+<section class="container my-4">
+  <h2 class="fs-1 fw-bold text-primary text-center">Team Leads</h2>
+  <hr>
   <div class="row row-cols-md-3 row-cols-1">
     {% for member in site.members %}
-      {% unless member.group == 'Leads' %}
+      {% unless member.team != 'Admin' %}
         {% continue %}
       {% endunless %}
       {% include member_card.html
         name=member.name
         team=member.team
+        position=member.position
       %}
     {% endfor %}
   </div>
@@ -55,11 +47,26 @@ permalink: /members/
 
 
 <!-- Advisors -->
-<section class="container my-4">
+<section class="container my-5">
   <h2 class="fs-1 fw-bold text-primary text-center">Advisors</h2>
   <hr>
   <div class="col-auto appearanceLeft" style="border: solid #ffc107; text-align: center;">
     <p>Dr. Duncan Elliott<p>
     <p>ECE Advisor</p>
+  </div>
+</section>
+
+<!-- Past Members -->
+<section class="container my-4">
+  <h2 class="fs-1 fw-bold text-primary text-center">Past Members</h2>
+  <hr>
+  <div class="row row-cols-md-3 row-cols-1">
+    {% for member in site.past_members %}
+      {% include member_card.html
+        name=member.name
+        team=member.team
+        position=member.position
+      %}
+    {% endfor %}
   </div>
 </section>

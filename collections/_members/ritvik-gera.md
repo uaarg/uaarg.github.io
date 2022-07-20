@@ -1,7 +1,6 @@
 ---
 name: "Ritvik Gera"
-team: "Electrical"
-position: "Lead"
-group: "Leads"
+team: "Admin"
+position: "Treasurer"
 image_name: "placeholder.jpg"
 ---
