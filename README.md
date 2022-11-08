@@ -64,7 +64,7 @@ vendor: Ruby dependencies.
     
 ## Publish to Github Pages
 
-Simply push to the `source` branch and it should be built by github.
+Simply push to the `master` branch and it should be built by github.
 
 ## Editing Content
 
@@ -98,6 +98,7 @@ Thank you to all the developers who have worked on this website. Contact UAARG i
 1. Ryan Sandoval
 1. Aditya Harvi
 1. Ricky Au
+1. Saahil Rachh
 
 ## Copyright and license
 
