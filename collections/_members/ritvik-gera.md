@@ -1,6 +1,6 @@
 ---
 name: "Ritvik Gera"
 team: "Admin"
-position: "Treasurer"
+position: "VP Finance"
 image_name: "placeholder.jpg"
 ---

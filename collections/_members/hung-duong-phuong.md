@@ -1,6 +1,6 @@
 ---
-name: "Saahil Rachh"
-team: "Operations"
+name: "Hung (Tom) Duong Phuong"
+team: "Airframe"
 position: "Lead"
 image_name: "placeholder.jpg"
 ---
