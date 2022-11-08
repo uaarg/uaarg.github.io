@@ -1,6 +1,6 @@
 ---
 name: "Saahil Rachh"
-team: "Business"
-position: "Co-Lead"
+team: "Operations"
+position: "Lead"
 image_name: "placeholder.jpg"
 ---
