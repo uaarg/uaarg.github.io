@@ -99,6 +99,7 @@ Thank you to all the developers who have worked on this website. Contact UAARG i
 1. Aditya Harvi
 1. Ricky Au
 1. Saahil Rachh
+1. Khushi Mittal 
 
 ## Copyright and license
 
