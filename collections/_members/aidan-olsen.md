@@ -1,6 +1,6 @@
 ---
-name: "Shahzaib Ahmed"
-team: "Safety"
+name: "Aidan Olsen"
+team: "Imaging"
 position: "Lead"
 image_name: "placeholder.jpg"
 ---

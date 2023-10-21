@@ -1,6 +1,6 @@
 ---
-name: "Liyu Zhao"
-team: "Autopilot"
+name: "James Guest"
+team: "Airframe"
 position: "Lead"
 image_name: "placeholder.jpg"
 ---
