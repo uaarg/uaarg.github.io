@@ -1,6 +1,6 @@
 ---
 name: "Carl Berresheim"
 team: "Admin"
-position: "VP Technical"
+position: "President"
 image_name: "placeholder.jpg"
 ---
