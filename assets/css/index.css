@@ -5,7 +5,7 @@
 }
 
 .home-banner {
-  background: url('../videos/website.gif'), rgba(var(--bs-dark-rgb), 0.9);
+  background: url('../videos/website.gif'), rgba(var(--bs-dark-rgb), 0);
   background-blend-mode: overlay;
   background-position: center;
   background-repeat: no-repeat;
