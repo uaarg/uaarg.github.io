@@ -2,5 +2,6 @@
 name: "Khushi Mittal"
 team: "Outreach"
 position: "Lead"
-image_name: "placeholder.jpg"
+headshot: "../assets/images/members/khushi.png"
+linkedin: https://www.linkedin.com/in/khushi-mittal-22b78a231/
 ---

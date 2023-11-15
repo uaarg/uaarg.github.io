@@ -2,5 +2,8 @@
 name: "James Guest"
 team: "Airframe"
 position: "Lead"
-image_name: "placeholder.jpg"
+headshot: 
+linkedin: https://www.linkedin.com/in/jamesguest01123/
+
+
 ---

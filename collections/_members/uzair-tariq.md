@@ -2,5 +2,6 @@
 name: "Uzair Tariq"
 team: "Autopilot"
 position: "Lead"
-image_name: "placeholder.jpg"
+headshot: 
+linkedin: https://www.linkedin.com/in/uzxr/
 ---

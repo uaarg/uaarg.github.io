@@ -2,5 +2,6 @@
 name: "Aidan Olsen"
 team: "Imaging"
 position: "Lead"
-image_name: "placeholder.jpg"
+headshot: "../assets/images/members/aidan.png"
+linkedin: https://www.linkedin.com/in/aidanrolsen/
 ---

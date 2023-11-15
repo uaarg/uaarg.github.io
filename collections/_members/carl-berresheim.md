@@ -2,5 +2,6 @@
 name: "Carl Berresheim"
 team: "Admin"
 position: "President"
-image_name: "placeholder.jpg"
+headshot: "../assets/images/members/carl.png"
+linkedin: https://www.linkedin.com/in/carl-berresheim-3306871b8/
 ---
