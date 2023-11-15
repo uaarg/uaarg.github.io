@@ -17,8 +17,8 @@ stylesheet: index.css
 </section>
 
 <section class="container mt-4">
-  <h1 class="text-primary display-2 fw-bold text-center">What's New?</h1>
-  <hr>
+ <!-- <h1 class="text-primary display-2 fw-bold text-center">What's New?</h1> -->
+  <!-- <hr> -->
   <div class="d-grid grid-col-2">
     {% for post in site.posts limit:2 %}
     <div>
@@ -31,8 +31,8 @@ stylesheet: index.css
       %}
     </div>
     {% endfor %}
-  </div>
-  <a href="{% link blog/index.html %}" class="d-block text-end fs-4">See more</a>
+  </div> 
+  <!-- <a href="{% link blog/index.html %}" class="d-block text-end fs-4">See more</a> -->
 </section>
 
 <section class="container my-4">
