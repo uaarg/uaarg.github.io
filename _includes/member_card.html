@@ -1,10 +1,20 @@
-<div class="col mt-3" style="color: Black;">
-    <div class="card bg-primary text-black">
-        <div class="card-body">
-            <h3 class="card-title"><b>{{ include.name }}</b></h3>
-            <hr>
-            <h4 class="card-title">Team: {{ include.team }} </h4>
-            <p class="card-text">Position: {{ include.position }} </p>
+
+</head>
+<body>
+    <div class="col mt-3" style="color: Black;">
+        <div class="card bg-primary text-black ">
+            <div class="card-body d-flex align-items-center">
+                <img alt="{{include.headshot}}" src="{{include.headshot}}" class="rounded-circle" style="width: 100px; height: 100px; margin-right: 20px;border-radius: 50%;">
+
+                <div>
+                    <h3 class="card-title"><b>{{ include.name }}</b></h3>
+                    <hr>
+                    <h4 class="card-title">Team: {{ include.team }} </h4>
+                    <p class="card-text">Position: {{ include.position }} </p>
+                    <a class="card-text" href="{{ include.linkedin }}">Linkedin</a>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</body>
+</html>
