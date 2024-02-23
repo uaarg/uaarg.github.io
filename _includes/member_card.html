@@ -11,7 +11,9 @@
                     <hr>
                     <h4 class="card-title">Team: {{ include.team }} </h4>
                     <p class="card-text">Position: {{ include.position }} </p>
-                    <a class="card-text" href="{{ include.linkedin }}">Linkedin</a>
+                    {% if include.linkedin %}
+                        <a class="card-text" href="{{ include.linkedin }}">Linkedin</a>
+                    {% endif %}
                 </div>
             </div>
         </div>
