@@ -10,7 +10,33 @@ If this is the first time you are working on this website, please familiarize yo
 - [Jekyll](https://jekyllrb.com/)
 - [Liquid Templating](https://shopify.github.io/liquid/)
 
-## Installation
+## Using Codespaces (Preferred)
+
+As the website now depends on a very old version of ruby (we really should
+update those libraries), it is best to use github codespaces (or for more
+advanced users, local devcontainers.) These can be done by clicking "Code" on
+the Github site for this repo, and then pressing "Start Codespace with
+devcontainers". If this is the first time setting up the devcontainer, you will
+need to run these setup commands in a terminal:
+
+```sh
+gem install bundler:2.1.4
+bundle config set path 'vendor/bundle'
+bundle install
+```
+
+Again, after this has been run once, you shouldn't need to run it again. Now,
+to start the “development server” - a live preview of the website while you
+make changes to it - run the following:
+
+```sh
+bundle exec jekyll serve --watch
+```
+
+Then Ctrl/Cmd click on the link in the output of the above command.
+
+
+## Installation (Local Machine)
 
 Clone this repository to your local machine.
 Make sure you are using a UNIX system.
