@@ -1,7 +1,7 @@
 ---
 name: "Paige Pauls"
-team: "--"
-position: "--"
+team: "Outreach"
+position: "Lead"
 headshot: "../assets/images/members/Paige Pauls.png"
-linkedin: --
+linkedin: https://www.linkedin.com/in/paige-pauls-32a889278/
 ---
