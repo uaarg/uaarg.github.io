@@ -7,27 +7,8 @@ permalink: /members/
   <h1 class="display-2 fw-bold text-center text-primary">Members</h1>
 </section>
 
-<!-- Exec Team -->
-<section class="container">
-  <h2 class="fs-1 fw-bold text-primary text-center">Executive Team</h2>
-  <hr>
-  <div class="row row-cols-md-3 row-cols-1">
-    {% for member in site.members %}
-      {% unless member.team == "Admin" %}
-        {% continue %}
-      {% endunless %}
-      <div style="order: {{ member.order | default: 0 }}">
-      {% include member_card.html
-        name=member.name
-        team=member.team
-        position=member.position
-        linkedin=member.linkedin
-        headshot=member.headshot
-      %}
-      </div>
-    {% endfor %}
-  </div>
-</section>
+<!-- removed Exec Team -->
+
 
 <!-- Team Leads -->
 <section class="container my-4">
@@ -35,9 +16,6 @@ permalink: /members/
   <hr>
   <div class="row row-cols-md-3 row-cols-1">
     {% for member in site.members %}
-      {% unless member.team != 'Admin' %}
-        {% continue %}
-      {% endunless %}
       {% include member_card.html
         name=member.name
         team=member.team
