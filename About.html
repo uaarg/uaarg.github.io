@@ -4,7 +4,7 @@ permalink: /about/
 ---
 <section class="container my-4">
   <div class="row justify-content-center">
-    <h1 class="display-2 fw-bold text-primary text-center">Who We Are</h1>
+    <h1 class="display-4 fw-bold text-primary text-center">Who We Are</h1>
     <hr>
     <p>
       UAARG is a student vehicle project in the Faculty of Engineering. We
@@ -38,18 +38,40 @@ permalink: /about/
 <div class="spacer spacer-1"></div>
 
 <section class="container-fluid bg-primary text-black">
-  <h1 class="display-2 fw-bold text-center">Our Sub-Teams</h1>
+  <h1 class="display-4 fw-bold text-center text-dark">Our Sub-Teams</h1>
   <div class="container">
     <hr>
+
+    <img class="img-fluid rounded" src="/assets/images/about/IMG_6973.png" width="24.9%" alt="">
+   <img class="img-fluid rounded" src="/assets/images/about/Media (1).jpeg" width="24.9%" alt="">
+   <img class="img-fluid rounded" src="/assets/images/about/Media.jpeg" width="24%" alt="">
+   <img class="img-fluid rounded" src="/assets/images/about/Media (2).jpeg" width="24.9%" alt="">
+   
+   <br>
+   <br>
     <p>
       UAARG is composed of individual sub-teams that each work on a focused
       aspect of our drone.  Members are encouraged to join the teams they are
       most interested in, but to also explore other teams to gain
-      interdisciplinary experience.
+      interdisciplinary experience. Below is is an overview of the sub teams in UAARG:
+   <br>
+   <br>
+
+    <p>
+      <h2 class="display-6 fw-bold text-center text-dark">Airframe</h2>
+      The Airframe Team designs, manufactures and assembles all of our aircraft. The team uses engineering analysis to build a model of the aerodynamics, structural requirements, and overall efficiency to inform iterative design of the aircrafts. Manufacturing of parts is done using techniques such as 3D printing, laser cutting, and CNC milling.
     </p>
-    <!--<p>
-      Below is is an overview of the sub teams in UAARG:
-    </p>-->
+    <p>
+      <h2 class="display-6 fw-bold text-center text-dark">Autopilot</h2>
+      Autopilot focuses on the creation and maintenance of autonomous flight capabilities within the UAV and the UGV.
+      Additionally, flight plans and Radio control for manual override of the autonomous systems are the responsibility of the autopilot team.
+    </p>
+    <p>
+      <h2 class="display-6 fw-bold text-center text-dark">Imaging</h2>
+      The Imaging Team implements computer vision algorithms and develops custom ground station software to monitor their performance in-flight. This enables our drone to navigate around obstacles and respond to visual ground markers without human intervention.  
+    </p>
+    <br>
+    <img class="img-fluid rounded" src="/assets/images/planetoss.jpg" alt="">
     <div class="d-flex flex-column gap-2 py-2">
       {% for team in site.subteams %}
         {% capture image %}

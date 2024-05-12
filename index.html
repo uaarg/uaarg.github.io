@@ -36,8 +36,17 @@ stylesheet: index.css
 </section>
 
 <section class="container my-4">
-    <h1 class="text-primary display-2 fw-bold text-center">What We Do</h1>
+    <h1 class="text-primary display-3 fw-bold text-center">What We Do</h1>
     <hr style="background: grey; height: 3px;">
+    <pr>
+        Since our inception in 2004, we have been dedicated to developing fully autonomous drones.
+        Our focus lies in overcoming complex engineering challenges through utilization of machine learning techniques.
+        Through hands-on experience, we provide our members with invaluable technical skills
+        while they are still in university. We collaborate to design, manufacture, and rigorously
+         test our drones while annually representing University of Alberta in national RPAS competitions.
+    </pr>
+    <br><br>
+
 
     <div class="d-grid grid-col-3">
         {% include icon_card.html top="Automated UAV" icon="laptop-code" bottom="Software and Systems" %} {% include image_card.html top="Airframe" image="assets/images/airplane.jpg" bottom="Research and Development" %} {% include icon_card.html top="International"
@@ -50,37 +59,12 @@ stylesheet: index.css
 
 <section class="container-fluid bg-primary text-dark pb-4">
     <div class="container-md">
-        <h2 class="display-2 fw-bold text-center">Our Competitions</h2>
-        <hr style="background: grey; height: 3px;">
-        <p>Throughout the year, UAARG designs and develops autonomous aircraft for student competitions, where we perform a full flight demonstration of our aircraft. We attend the following competitions each year:</p>
-        <div class="row">
-            <div class="col-sm">
-                <a href="{% link Competitions.html %}#comp1">
-                    <p class="fw-bold">USC:<span>&nbsp Unmanned Systems Canada</span></p>
-                </a>
-                <a href="{% link Competitions.html %}#comp2">
-                    <p class="fw-bold">AUVSI:<span>&nbsp Association of Unmanned Vehicle Systems International</span></p>
-                </a>
-                <!-- <p>UAARG also has a blog where we document our competitions and work:</p>
-                <a href="{% link blog/index.html %}" class="btn btn-primary btn-lg d-block">Check out our Blog</a> -->
-            </div>
-            <div class="col-sm">
-                <img class="img-fluid rounded" src="{% link assets/images/home/WhatsApp Image 2023-05-13 at 11.53.04 PM.jpeg %}">
-            </div>
-        </div>
-    </div>
-</section>
-
-<div class="spacer spacer-2"></div>
-
-<section class="container-fluid mb-4">
-    <div class="container">
-        <h1 class="fw-bold display-2 text-center">Come Join the Fun!</h1>
+        <h1 class="fw-bold display-3 text-center">Come Join the Fun!</h1>
         <hr style="background: white; height: 3px;">
         <div class="row">
             <div class="col-sm">
-                <h1 class="fw-bold rotatingText" width="55%">Your
-                    <span class="slidingVertical rotatingText text-primary" style="text-align: center;">
+                <h1 class="fw-bold rotatingText text-dark width="55%">Your
+                    <span class="slidingVertical rotatingText text-end" style="text-align: center;">
             <span>Club.</span>
                     <span>Ideas.</span>
                     <span>Voice.</span>
@@ -108,23 +92,11 @@ stylesheet: index.css
             </div>
         </div>
     </div>
-    <a href="{% link Contact.html %}" class="btn btn-primary btn-lg d-block w-50 mx-auto">Join Now!</a>
-</section>
-
-<div class="spacer spacer-1"></div>
-
-<section class="container-fluid bg-primary text-dark pb-4">
-    <div class="container">
-        <h1 class="fw-bold text-center display-2">Our Generous Sponsors</h1>
-        <hr style="background: grey; height: 3px;">
-        <p class="text-center">A special thank you goes out to all of our wonderful sponsors for making this club a reality!
-        </p>
-        {% include sponsors.html %}
-        <p class="text-center mt-4">Check out the link below if you're interested in sponsoring us!</p>
-        <a href="{% link Contact.html %}" class="btn btn-primary btn-lg d-block w-50 mx-auto">Sponsor Us!</a>
-    </div>
 </section>
 
 <div class="spacer spacer-2"></div>
+
+
+
 
 <script src="assets/js/myScript.js"></script>
