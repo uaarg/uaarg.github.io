@@ -126,8 +126,8 @@ Thank you to all the developers who have worked on this website. Contact UAARG i
 1. Ricky Au
 1. Saahil Rachh
 1. Khushi Mittal 
+1. Vagdevi Ponugupati
 
 ## Copyright and license
 
 Copyright 2013 Kippt Inc. under [The MIT License ](LICENSE)
-
