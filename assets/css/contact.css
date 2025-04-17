@@ -1,9 +1,0 @@
-.get-involved {
-  background: url('/assets/images/planetoss.jpg'), rgba(var(--bs-dark-rgb), 0.9);
-  background-blend-mode: overlay;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 16rem;
-  display: block;
-}
