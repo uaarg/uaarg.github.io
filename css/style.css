@@ -73,6 +73,10 @@ nav > .logo:hover {
   text-decoration: none;
 }
 
+nav > .highlight {
+  text-decoration: underline;
+}
+
 nav > a:visited {
   color: initial;
 }
@@ -167,6 +171,7 @@ h1 {
   font-size: 4.5rem;
   font-weight: 400;
   margin-bottom: 0;
+  margin-top: 24px;
 }
 
 h2 {
