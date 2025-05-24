@@ -1,0 +1,189 @@
+@font-face {
+  font-family: "Miram Libre";
+  src: url('/font/Miriam_Libre/static/MiriamLibre-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Miram Libre";
+  src: url('/font/Miriam_Libre/static/MiriamLibre-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Miram Libre";
+  src: url('/font/Miriam_Libre/static/MiriamLibre-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Miram Libre";
+  src: url('/font/Miriam_Libre/static/MiriamLibre-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+html {
+  font-family: "Miram Libre";
+  width: 100vw;
+}
+
+main, header, footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  font-size: 40px;
+}
+
+nav {
+  width: calc(100% - 16px);
+  padding-right: 16px;
+  padding-top: 8px;
+
+  max-width: 1200px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+nav > a {
+  text-decoration: none;
+
+  margin-left: 12px;
+}
+
+nav > a:hover {
+  text-decoration: underline;
+}
+
+nav > .logo:hover {
+  text-decoration: none;
+}
+
+nav > a:visited {
+  color: initial;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  width: calc(100% - 2*16px);
+  gap: 16px;
+  padding: 16px;
+
+  max-width: 1200px;
+}
+
+img {
+  height: fit-content;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.text {}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.end {
+  justify-content: end;
+}
+
+.primary {
+  color: white;
+  background-color: #2F2D70;
+}
+
+.primary:visited {
+  color: white !important;
+}
+
+.button {
+  text-decoration: none;
+
+  margin-left: 12px;
+  padding: 6px 12px;
+
+  border-radius: 32px;
+
+  transition: color ease 60ms;
+  transition: background-color ease 60ms;
+}
+
+.button:hover {
+  background-color: #111;
+  color: white !important;
+}
+
+.button::after {
+  content: '→';
+  margin-left: 12px;
+}
+
+.button:visited {
+  color: inherit;
+}
+
+header, footer {
+  width: 100%;
+  background-color: #D9D9D9;
+}
+
+.bg {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.bg-grey {
+  background-color: #D9D9D9;
+}
+
+.no-mt {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.medium {
+  font-size: 1.5rem;
+}
+
+.center {
+  width: 100%;
+  text-align: center;
+}
+
+footer {
+  min-height: 30vh;
+  display: flex;
+  justify-content: end;
+}
