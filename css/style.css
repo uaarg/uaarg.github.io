@@ -81,6 +81,10 @@ nav > a:visited {
   color: initial;
 }
 
+a {
+  color: initial;
+}
+
 section {
   display: flex;
   flex-direction: row;
