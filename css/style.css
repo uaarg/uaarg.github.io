@@ -221,6 +221,11 @@ h2 {
   text-align: center;
 }
 
+.social-logo {
+  height: 50px;
+  padding: 30px;
+}
+
 footer {
   min-height: 30vh;
   display: flex;
