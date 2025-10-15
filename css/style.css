@@ -226,18 +226,22 @@ h2 {
   padding: 30px;
 }
 
+.sponsor-logo {
+  max-height: 120px;
+  padding: 20px;
+}
+
 footer {
   min-height: 30vh;
   display: flex;
   justify-content: end;
 }
 
-#sponsors {
-  display: inline;
-  text-align: center;
-}
-
-#sponsors > a {
-  padding-left: 16px;
-  padding-right: 16px;
+#sponsors { /* flex style formatting */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
