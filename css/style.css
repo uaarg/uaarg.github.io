@@ -98,7 +98,7 @@ section {
 }
 
 section > img {
-  max-width: 45vw;
+  max-width: min(45vw, 800px);
 }
 
 .hero {
