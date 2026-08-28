@@ -21,6 +21,23 @@
   font-weight: 700;
 }
 
+:root {
+  --color-bg: #8ba47d;
+  --color-surface: #FFFFFF;
+  --color-primary: #000000;
+  --color-accent: #919098;
+  --color-button: #919098;
+  --color-button-text: #FFFFFF;
+  --color-text: #000000;
+  --color-muted: #2e2e33;
+  --color-custom: #919098;
+  --color-custom-100: #b9b7bc;
+  --color-custom-200: #d0ced3;
+  --color-custom-900: #5d5b62;
+  --color-custom-accent: #f1f5ee;
+  --color-custom-muted: #7e7b82;
+}
+
 html {
   font-family: "Miram Libre";
   width: 100vw;
@@ -37,36 +54,48 @@ body {
   padding: 0;
   margin: 0;
   width: 100%;
+  min-height: 100vh;
+  background: var(--color-bg);
+  color: var(--color-text);
 }
 
 .logo {
   display: flex;
   flex-direction: row;
   align-items: center;
-
   font-size: 40px;
 }
 
 nav {
-  width: calc(100% - 16px);
-  padding-right: 16px;
-  padding-top: 8px;
-
+  width: calc(100% - 32px);
   max-width: 1200px;
-
+  padding: 20px 24px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-bg);
+  border-radius: 32px;
+  box-shadow: 0 20px 40px rgba(17,24,39,0.06);
+  margin: 22px 0;
+  border: 1px solid rgba(17,24,39,0.08);
 }
 
 nav > a {
   text-decoration: none;
-
-  margin-left: 12px;
+  color: var(--color-text);
+  margin-left: 18px;
+  font-weight: 600;
 }
 
 nav > a:hover {
   text-decoration: underline;
+  color: var(--color-accent);
+}
+
+nav > .logo,
+.logo {
+  color: var(--color-text);
 }
 
 nav > .logo:hover {
@@ -74,31 +103,45 @@ nav > .logo:hover {
 }
 
 nav > .highlight {
+  color: var(--color-accent);
   text-decoration: underline;
 }
 
 nav > a:visited {
-  color: initial;
+  color: var(--color-text);
 }
 
 a {
-  color: initial;
+  color: var(--color-primary);
+}
+
+a:hover {
+  color: var(--color-accent);
 }
 
 section {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-
-  width: calc(100% - 2*16px);
-  gap: 16px;
-  padding: 16px;
-
+  align-items: center;
+  width: calc(100% - 32px);
+  gap: 24px;
+  padding: 36px;
   max-width: 1200px;
+  background-color: var(--color-surface);
+  border-radius: 32px;
+  box-shadow: 0 20px 50px rgba(17,24,39,0.06);
+  border: 1px solid rgba(17,24,39,0.06);
+  background-image: radial-gradient(circle at top left, rgba(255,255,255,0.35), rgba(145,144,152,0.15));
 }
 
 section > img {
   max-width: min(45vw, 800px);
+}
+
+.text p {
+  line-height: 1.75;
+  color: var(--color-text);
 }
 
 .hero {
@@ -135,8 +178,6 @@ img {
   flex: 1;
 }
 
-.text {}
-
 .row {
   display: flex;
   flex-direction: row;
@@ -147,58 +188,72 @@ img {
 }
 
 .primary {
-  color: white;
-  background-color: #2F2D70;
-}
-
-.primary:visited {
-  color: white !important;
+  color: var(--color-text);
+  background-color: var(--color-accent);
+  border-color: rgba(139,164,125,0.20);
+ }
+ 
+ .primary:hover {
+  background-color: rgba(139,164,125,0.95);
+  color: var(--color-text) !important;
 }
 
 .button {
   text-decoration: none;
-
   margin-left: 12px;
-  padding: 6px 12px;
-
+  padding: 14px 28px;
   border-radius: 32px;
-
-  transition: color ease 60ms;
-  transition: background-color ease 60ms;
-}
-
-.button:hover {
-  background-color: #111;
-  color: white !important;
-}
-
-.button::after {
-  content: '→';
+  border: 1px solid rgba(139,164,125,0.16);
+   background-color: var(--color-button);
+   color: var(--color-button-text);
+   font-weight: 700;
+   transition: color 120ms ease, background-color 120ms ease, transform 120ms ease;
+ }
+ 
+ .button:hover {
+  background-color: rgba(139,164,125,0.88);
+   color: var(--color-button-text);
+   transform: translateY(-1px);
+ }
+ 
+ .button:focus-visible {
+  outline: 3px solid rgba(139,164,125,0.22);
   margin-left: 12px;
 }
 
-.button:visited {
-  color: inherit;
+/* Utility classes for the user-supplied custom color (#8BA47D) */
+.accent-custom {
+  color: var(--color-custom) !important;
+}
+
+.bg-custom {
+  background-color: var(--color-custom);
+  color: var(--color-button-text);
+}
+
+.border-custom {
+  border-color: rgba(139,164,125,0.12);
+}
+
+.icon-custom {
+  fill: var(--color-custom);
 }
 
 header, footer {
   width: 100%;
-  background-color: #D9D9D9;
+  background-color: transparent;
 }
-
 .bg {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding: 32px 0;
+  background: linear-gradient(135deg, rgba(145,144,152,0.14), rgba(139,164,125,0.7));
 }
 
 .bg-grey {
-  background-color: #D9D9D9;
-}
-
-.no-mt {
-  margin-top: 0;
+  background-color: rgba(145,144,152,0.08);
 }
 
 h1 {
@@ -206,10 +261,12 @@ h1 {
   font-weight: 400;
   margin-bottom: 0;
   margin-top: 24px;
+  color: var(--color-primary);
 }
 
 h2 {
   font-size: 2rem;
+  color: var(--color-primary);
 }
 
 .medium {
@@ -222,8 +279,8 @@ h2 {
 }
 
 .social-logo {
-  height: 50px;
-  padding: 30px;
+  height: 24px;
+  padding: 12px;
 }
 
 .sponsor-logo {
@@ -235,6 +292,76 @@ footer {
   min-height: 30vh;
   display: flex;
   justify-content: end;
+}
+
+.team-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 1200px;
+}
+
+.team-section-header p {
+  margin-top: 8px;
+  max-width: 780px;
+  line-height: 1.6;
+  color: var(--color-muted);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.team-card,
+.subteam-card {
+  background-color: var(--color-surface);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 8px 20px rgba(31,41,55,0.04); /* subtle shadow */
+  border: 1px solid rgba(31,41,55,0.04);
+}
+
+.team-card h3,
+.subteam-card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  color: var(--color-primary);
+}
+
+.team-card p {
+  margin: 0;
+  color: var(--color-text);
+}
+
+.subteams {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.subteam-card ul {
+  margin: 12px 0 0;
+  padding-left: 20px;
+  color: var(--color-text);
+}
+
+.subteam-card li {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 700px) {
+  .team-section {
+    gap: 20px;
+  }
+
+  .team-card,
+  .subteam-card {
+    padding: 20px;
+  }
 }
 
 #sponsors { /* flex style formatting */
